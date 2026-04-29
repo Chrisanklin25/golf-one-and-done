@@ -1,0 +1,416 @@
+{
+  "last_updated": "2026-04-29",
+  "season": {
+    "pool_name": "CRUS11TOUR",
+    "total_events": 30,
+    "players_in_pool": 40
+  },
+  "used_players": [
+    {
+      "name": "Patrick Cantlay",
+      "tournament": "Farmers Insurance Open",
+      "result": "Missed Cut",
+      "earnings": 0
+    },
+    {
+      "name": "Hideki Matsuyama",
+      "tournament": "WM Phoenix Open",
+      "result": "T2",
+      "earnings": 1046400
+    },
+    {
+      "name": "Si Woo Kim",
+      "tournament": "AT&T Pebble Beach Pro-Am",
+      "result": "T45",
+      "earnings": 57000
+    },
+    {
+      "name": "Russell Henley",
+      "tournament": "The Genesis Invitational",
+      "result": "Missed Cut",
+      "earnings": 0
+    },
+    {
+      "name": "Nicolai Hojgaard",
+      "tournament": "Cognizant Classic",
+      "result": "T6",
+      "earnings": 324000
+    },
+    {
+      "name": "Matt Fitzpatrick",
+      "tournament": "Arnold Palmer Invitational",
+      "result": "T41",
+      "earnings": 78000
+    }
+  ],
+  "schedule": [
+    {
+      "num": 1,
+      "name": "Farmers Insurance Open",
+      "month": "Jan 2026",
+      "purse": 8700000,
+      "tier": 2,
+      "type": "Standard",
+      "status": "done",
+      "pick": "Patrick Cantlay",
+      "result": "Missed Cut",
+      "earnings": 0
+    },
+    {
+      "num": 2,
+      "name": "WM Phoenix Open",
+      "month": "Feb 2026",
+      "purse": 20000000,
+      "tier": 1,
+      "type": "Signature",
+      "status": "done",
+      "pick": "Hideki Matsuyama",
+      "result": "T2",
+      "earnings": 1046400
+    },
+    {
+      "num": 3,
+      "name": "AT&T Pebble Beach Pro-Am",
+      "month": "Feb 2026",
+      "purse": 8700000,
+      "tier": 2,
+      "type": "Standard",
+      "status": "done",
+      "pick": "Si Woo Kim",
+      "result": "T45",
+      "earnings": 57000
+    },
+    {
+      "num": 4,
+      "name": "The Genesis Invitational",
+      "month": "Feb 2026",
+      "purse": 20000000,
+      "tier": 1,
+      "type": "Signature",
+      "status": "done",
+      "pick": "Russell Henley",
+      "result": "Missed Cut",
+      "earnings": 0
+    },
+    {
+      "num": 5,
+      "name": "Cognizant Classic",
+      "month": "Mar 2026",
+      "purse": 8000000,
+      "tier": 2,
+      "type": "Standard",
+      "status": "done",
+      "pick": "Nicolai Hojgaard",
+      "result": "T6",
+      "earnings": 324000
+    },
+    {
+      "num": 6,
+      "name": "Arnold Palmer Invitational",
+      "month": "Mar 2026",
+      "purse": 20000000,
+      "tier": 1,
+      "type": "Signature",
+      "status": "done",
+      "pick": "Matt Fitzpatrick",
+      "result": "T41",
+      "earnings": 78000
+    },
+    {
+      "num": 7,
+      "name": "The Players Championship",
+      "month": "Mar 2026",
+      "purse": 25000000,
+      "tier": 1,
+      "type": "Players",
+      "status": "upcoming",
+      "pick": null,
+      "result": null,
+      "earnings": 0
+    },
+    {
+      "num": 8,
+      "name": "Valspar Championship",
+      "month": "Mar 2026",
+      "purse": 8700000,
+      "tier": 3,
+      "type": "Standard",
+      "status": "upcoming",
+      "pick": null,
+      "result": null,
+      "earnings": 0
+    },
+    {
+      "num": 9,
+      "name": "Texas Children's Houston Open",
+      "month": "Mar/Apr 2026",
+      "purse": 8700000,
+      "tier": 3,
+      "type": "Standard",
+      "status": "upcoming",
+      "pick": null,
+      "result": null,
+      "earnings": 0
+    },
+    {
+      "num": 10,
+      "name": "Valero Texas Open",
+      "month": "Apr 2026",
+      "purse": 8700000,
+      "tier": 3,
+      "type": "Standard",
+      "status": "upcoming",
+      "pick": null,
+      "result": null,
+      "earnings": 0
+    },
+    {
+      "num": 11,
+      "name": "Masters Tournament",
+      "month": "Apr 2026",
+      "purse": 20000000,
+      "tier": 1,
+      "type": "Major",
+      "status": "upcoming",
+      "pick": null,
+      "result": null,
+      "earnings": 0
+    },
+    {
+      "num": 12,
+      "name": "RBC Heritage",
+      "month": "Apr 2026",
+      "purse": 8700000,
+      "tier": 3,
+      "type": "Standard",
+      "status": "upcoming",
+      "pick": null,
+      "result": null,
+      "earnings": 0
+    },
+    {
+      "num": 13,
+      "name": "Miami Championship",
+      "month": "Apr 2026",
+      "purse": 4000000,
+      "tier": 3,
+      "type": "Standard",
+      "status": "upcoming",
+      "pick": null,
+      "result": null,
+      "earnings": 0
+    },
+    {
+      "num": 14,
+      "name": "Truist Championship",
+      "month": "May 2026",
+      "purse": 8700000,
+      "tier": 3,
+      "type": "Standard",
+      "status": "upcoming",
+      "pick": null,
+      "result": null,
+      "earnings": 0
+    },
+    {
+      "num": 15,
+      "name": "PGA Championship",
+      "month": "May 2026",
+      "purse": 19400000,
+      "tier": 1,
+      "type": "Major",
+      "status": "upcoming",
+      "pick": null,
+      "result": null,
+      "earnings": 0
+    },
+    {
+      "num": 16,
+      "name": "The CJ Cup Byron Nelson",
+      "month": "May 2026",
+      "purse": 8700000,
+      "tier": 3,
+      "type": "Standard",
+      "status": "upcoming",
+      "pick": null,
+      "result": null,
+      "earnings": 0
+    },
+    {
+      "num": 17,
+      "name": "Charles Schwab Challenge",
+      "month": "May 2026",
+      "purse": 8700000,
+      "tier": 3,
+      "type": "Standard",
+      "status": "upcoming",
+      "pick": null,
+      "result": null,
+      "earnings": 0
+    },
+    {
+      "num": 18,
+      "name": "The Memorial Tournament",
+      "month": "Jun 2026",
+      "purse": 20000000,
+      "tier": 1,
+      "type": "Signature",
+      "status": "upcoming",
+      "pick": null,
+      "result": null,
+      "earnings": 0
+    },
+    {
+      "num": 19,
+      "name": "RBC Canadian Open",
+      "month": "Jun 2026",
+      "purse": 8700000,
+      "tier": 3,
+      "type": "Standard",
+      "status": "upcoming",
+      "pick": null,
+      "result": null,
+      "earnings": 0
+    },
+    {
+      "num": 20,
+      "name": "U.S. Open",
+      "month": "Jun 2026",
+      "purse": 21500000,
+      "tier": 1,
+      "type": "Major",
+      "status": "upcoming",
+      "pick": null,
+      "result": null,
+      "earnings": 0
+    },
+    {
+      "num": 21,
+      "name": "Travelers Championship",
+      "month": "Jun 2026",
+      "purse": 9100000,
+      "tier": 2,
+      "type": "Standard",
+      "status": "upcoming",
+      "pick": null,
+      "result": null,
+      "earnings": 0
+    },
+    {
+      "num": 22,
+      "name": "John Deere Classic",
+      "month": "Jul 2026",
+      "purse": 7500000,
+      "tier": 3,
+      "type": "Standard",
+      "status": "upcoming",
+      "pick": null,
+      "result": null,
+      "earnings": 0
+    },
+    {
+      "num": 23,
+      "name": "Genesis Scottish Open",
+      "month": "Jul 2026",
+      "purse": 9000000,
+      "tier": 2,
+      "type": "Standard",
+      "status": "upcoming",
+      "pick": null,
+      "result": null,
+      "earnings": 0
+    },
+    {
+      "num": 24,
+      "name": "The Open Championship",
+      "month": "Jul 2026",
+      "purse": 17000000,
+      "tier": 1,
+      "type": "Major",
+      "status": "upcoming",
+      "pick": null,
+      "result": null,
+      "earnings": 0
+    },
+    {
+      "num": 25,
+      "name": "3M Open",
+      "month": "Jul 2026",
+      "purse": 7500000,
+      "tier": 3,
+      "type": "Standard",
+      "status": "upcoming",
+      "pick": null,
+      "result": null,
+      "earnings": 0
+    },
+    {
+      "num": 26,
+      "name": "Rocket Classic",
+      "month": "Jul 2026",
+      "purse": 7500000,
+      "tier": 3,
+      "type": "Standard",
+      "status": "upcoming",
+      "pick": null,
+      "result": null,
+      "earnings": 0
+    },
+    {
+      "num": 27,
+      "name": "Wyndham Championship",
+      "month": "Aug 2026",
+      "purse": 7500000,
+      "tier": 3,
+      "type": "Standard",
+      "status": "upcoming",
+      "pick": null,
+      "result": null,
+      "earnings": 0
+    },
+    {
+      "num": 28,
+      "name": "FedEx St. Jude Championship",
+      "month": "Aug 2026",
+      "purse": 20000000,
+      "tier": 1,
+      "type": "FedEx",
+      "status": "upcoming",
+      "pick": null,
+      "result": null,
+      "earnings": 0
+    },
+    {
+      "num": 29,
+      "name": "BMW Championship",
+      "month": "Aug/Sep 2026",
+      "purse": 20000000,
+      "tier": 1,
+      "type": "FedEx",
+      "status": "upcoming",
+      "pick": null,
+      "result": null,
+      "earnings": 0
+    },
+    {
+      "num": 30,
+      "name": "Tour Championship",
+      "month": "Sep 2026",
+      "purse": 100000000,
+      "tier": 1,
+      "type": "FedEx",
+      "status": "upcoming",
+      "pick": null,
+      "result": null,
+      "earnings": 0
+    }
+  ],
+  "this_week": {
+    "generated_at": null,
+    "tournament": {},
+    "recommendations": [],
+    "save_for_later": [],
+    "injury_watch": [],
+    "upcoming_tier1": []
+  }
+}

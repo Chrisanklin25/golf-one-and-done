@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CRUS11TOUR Survivor Pool</title>
+<style>
+  :root {
+    --navy: #1F3864;
+    --gold: #D4A843;
+    --gold-bg: #FFF8E7;
+    --green: #276221;
+    --green-bg: #E8F5E9;
+    --red: #C00000;
+    --red-bg: #FFEBEE;
+    --blue: #1565C0;
+    --blue-bg: #E3F2FD;
+    --gray: #F5F5F5;
+    --border: #E0E0E0;
+    --text: #212121;
+    --text-secondary: #616161;
+    --white: #FFFFFF;
+    --tier1: #1F3864;
+    --tier2: #2E7D32;
+    --tier3: #757575;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--gray);
+    color: var(--text);
+    line-height: 1.5;
+    padding: 0;
+  }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, var(--navy) 0%, #2E4A7A 100%);
+    color: white;
+    padding: 20px 16px 16px;
+    text-align: center;
+  }
+  .header h1 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+  .header .subtitle {
+    font-size: 12px;
+    opacity: 0.7;
+  }
+  .header .earnings-banner {
+    margin-top: 12px;
+    background: rgba(255,255,255,0.12);
+    border-radius: 10px;
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-around;
+    gap: 8px;
+  }
+  .stat-box { text-align: center; }
+  .stat-box .stat-value { font-size: 20px; font-weight: 700; }
+  .stat-box .stat-label { font-size: 10px; text-transform: uppercase; opacity: 0.7; letter-spacing: 0.5px; }
+
+  /* Tabs */
+  .tabs {
+    display: flex;
+    background: var(--white);
+    border-bottom: 2px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .tab {
+    flex: 1;
+    padding: 12px 8px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s;
+  }
+  .tab.active {
+    color: var(--navy);
+    border-bottom-color: var(--gold);
+  }
+
+  /* Content */
+  .content { max-width: 600px; margin: 0 auto; padding: 12px; }
+  .section { display: none; }
+  .section.active { display: block; }
+
+  /* Cards */
+  .card {
+    background: var(--white);
+    border-radius: 12px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+  .card-header {
+    padding: 12px 16px;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card-body { padding: 0 16px 16px; }
+
+  /* Tournament banner */
+  .tourney-card .card-header {
+    background: var(--navy);
+    color: white;
+  }
+  .tourney-meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  .meta-item {
+    background: var(--gray);
+    border-radius: 8px;
+    padding: 8px 12px;
+  }
+  .meta-label { font-size: 10px; text-transform: uppercase; color: var(--text-secondary); }
+  .meta-value { font-size: 14px; font-weight: 600; }
+
+  /* Player recommendation rows */
+  .pick-row {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--border);
+    gap: 12px;
+  }
+  .pick-row:last-child { border-bottom: none; }
+  .pick-rank {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 13px;
+    flex-shrink: 0;
+  }
+  .pick-rank.top3 { background: var(--gold); color: white; }
+  .pick-rank.top6 { background: var(--blue-bg); color: var(--blue); }
+  .pick-rank.rest { background: var(--gray); color: var(--text-secondary); }
+  .pick-info { flex: 1; min-width: 0; }
+  .pick-name { font-weight: 600; font-size: 14px; }
+  .pick-detail { font-size: 11px; color: var(--text-secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .pick-score {
+    font-weight: 700;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .pick-score.high { color: var(--green); }
+  .pick-score.mid { color: var(--blue); }
+  .pick-score.low { color: var(--text-secondary); }
+
+  /* Tags */
+  .tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-right: 4px;
+  }
+  .tag-tier1 { background: #E8EAF6; color: var(--tier1); }
+  .tag-tier2 { background: #E8F5E9; color: var(--tier2); }
+  .tag-tier3 { background: #F5F5F5; color: var(--tier3); }
+  .tag-save { background: var(--gold-bg); color: #7F6000; }
+  .tag-injury { background: var(--red-bg); color: var(--red); }
+  .tag-major { background: #FFF3E0; color: #E65100; }
+
+  /* Save for later / Injury cards */
+  .alert-row {
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  .alert-row:last-child { border-bottom: none; }
+  .alert-name { font-weight: 600; font-size: 14px; margin-bottom: 2px; }
+  .alert-reason { font-size: 12px; color: var(--text-secondary); }
+
+  .save-card .card-header { background: #FFF8E7; color: #7F6000; }
+  .injury-card .card-header { background: var(--red-bg); color: var(--red); }
+
+  /* Season schedule */
+  .event-row {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--border);
+    gap: 10px;
+  }
+  .event-row:last-child { border-bottom: none; }
+  .event-status {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .event-status.done { background: var(--green); }
+  .event-status.upcoming { background: var(--border); }
+  .event-status.current { background: var(--gold); box-shadow: 0 0 0 3px rgba(212,168,67,0.3); }
+  .event-info { flex: 1; min-width: 0; }
+  .event-name { font-size: 13px; font-weight: 600; }
+  .event-meta-line { font-size: 11px; color: var(--text-secondary); }
+  .event-pick { text-align: right; flex-shrink: 0; }
+  .event-pick-name { font-size: 12px; font-weight: 600; }
+  .event-pick-result { font-size: 11px; }
+  .event-pick-result.positive { color: var(--green); }
+  .event-pick-result.zero { color: var(--red); }
+
+  /* Used players */
+  .used-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    padding: 12px 16px;
+  }
+  .used-chip {
+    background: var(--gray);
+    border-radius: 8px;
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+  .used-chip .chip-name { font-weight: 600; font-size: 13px; }
+  .used-chip .chip-event { color: var(--text-secondary); font-size: 10px; }
+  .used-chip .chip-earnings { font-weight: 600; margin-top: 2px; }
+  .used-chip .chip-earnings.positive { color: var(--green); }
+  .used-chip .chip-earnings.zero { color: var(--text-secondary); }
+
+  /* Upcoming tier 1 */
+  .tier1-row {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--border);
+    gap: 10px;
+  }
+  .tier1-row:last-child { border-bottom: none; }
+  .tier1-weeks {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--navy);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .tier1-weeks .num { font-size: 16px; font-weight: 700; line-height: 1; }
+  .tier1-weeks .wk { font-size: 8px; text-transform: uppercase; opacity: 0.7; }
+  .tier1-info { flex: 1; }
+  .tier1-name { font-weight: 600; font-size: 13px; }
+  .tier1-detail { font-size: 11px; color: var(--text-secondary); }
+
+  /* Last updated footer */
+  .footer {
+    text-align: center;
+    padding: 16px;
+    font-size: 11px;
+    color: var(--text-secondary);
+  }
+
+  /* No data state */
+  .no-data {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--text-secondary);
+  }
+  .no-data-icon { font-size: 40px; margin-bottom: 12px; }
+  .no-data-text { font-size: 14px; }
+
+  /* Expandable player details */
+  .pick-row.expandable { cursor: pointer; }
+  .pick-expand {
+    display: none;
+    padding: 8px 16px 12px 56px;
+    font-size: 12px;
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--border);
+    background: var(--gray);
+  }
+  .pick-expand.open { display: block; }
+  .pick-expand .detail-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+    margin-bottom: 6px;
+  }
+  .detail-item { text-align: center; }
+  .detail-item .d-label { font-size: 9px; text-transform: uppercase; color: #999; }
+  .detail-item .d-value { font-size: 13px; font-weight: 600; }
+  .pick-notes { font-style: italic; margin-top: 4px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>CRUS11TOUR SURVIVOR</h1>
+  <div class="subtitle" id="lastUpdated">Loading...</div>
+  <div class="earnings-banner">
+    <div class="stat-box">
+      <div class="stat-value" id="totalEarnings">—</div>
+      <div class="stat-label">Total Earnings</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-value" id="playersUsed">—</div>
+      <div class="stat-label">Players Used</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-value" id="playersLeft">—</div>
+      <div class="stat-label">Remaining</div>
+    </div>
+  </div>
+</div>
+
+<div class="tabs">
+  <div class="tab active" data-tab="picks">This Week</div>
+  <div class="tab" data-tab="season">Season</div>
+  <div class="tab" data-tab="used">Used</div>
+</div>
+
+<div class="content">
+
+  <!-- THIS WEEK TAB -->
+  <div class="section active" id="picks">
+
+    <div class="card tourney-card">
+      <div class="card-header">
+        <span id="tourneyName">Loading...</span>
+        <span id="tourneyTier" class="tag tag-tier1"></span>
+      </div>
+      <div class="card-body">
+        <div class="tourney-meta">
+          <div class="meta-item">
+            <div class="meta-label">Purse</div>
+            <div class="meta-value" id="tourneyPurse">—</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label">Type</div>
+            <div class="meta-value" id="tourneyType">—</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        Top Picks
+        <span style="font-size:11px; font-weight:400; color:var(--text-secondary)">Tap for details</span>
+      </div>
+      <div id="picksList"></div>
+    </div>
+
+    <div class="card save-card" id="saveCard" style="display:none">
+      <div class="card-header">Save for Later</div>
+      <div id="saveList"></div>
+    </div>
+
+    <div class="card injury-card" id="injuryCard" style="display:none">
+      <div class="card-header">Injury Watch</div>
+      <div id="injuryList"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" style="background:var(--navy); color:white;">Upcoming Tier 1 Events</div>
+      <div id="tier1List"></div>
+    </div>
+  </div>
+
+  <!-- SEASON TAB -->
+  <div class="section" id="season">
+    <div class="card">
+      <div class="card-header">2026 Season Schedule</div>
+      <div id="seasonList"></div>
+    </div>
+  </div>
+
+  <!-- USED PLAYERS TAB -->
+  <div class="section" id="used">
+    <div class="card">
+      <div class="card-header">Players Used (<span id="usedCount">0</span> of 40)</div>
+      <div class="used-grid" id="usedGrid"></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer" id="footer"></div>
+
+<script>
+// Load data
+let DATA = null;
+
+async function loadData() {
+  try {
+    const resp = await fetch('data.json?' + Date.now());
+    DATA = await resp.json();
+    render();
+  } catch (e) {
+    document.querySelector('.content').innerHTML =
+      '<div class="no-data"><div class="no-data-icon">⛳</div><div class="no-data-text">No data yet.<br>The Wednesday update will populate this dashboard.</div></div>';
+  }
+}
+
+function formatMoney(n) {
+  if (n == null) return '—';
+  if (n >= 1000000) return '$' + (n / 1000000).toFixed(1) + 'M';
+  if (n >= 1000) return '$' + (n / 1000).toFixed(0) + 'K';
+  return '$' + n.toLocaleString();
+}
+
+function render() {
+  if (!DATA) return;
+
+  const tw = DATA.this_week || {};
+  const sched = DATA.schedule || [];
+  const used = DATA.used_players || [];
+  const tourney = tw.tournament || {};
+
+  // Header stats
+  const totalE = used.reduce((s, p) => s + (p.earnings || 0), 0);
+  document.getElementById('totalEarnings').textContent = formatMoney(totalE);
+  document.getElementById('playersUsed').textContent = used.length;
+  document.getElementById('playersLeft').textContent = 40 - used.length;
+  document.getElementById('lastUpdated').textContent =
+    tw.generated_at ? 'Updated: ' + tw.generated_at : 'Season 2026';
+
+  // Tournament card
+  document.getElementById('tourneyName').textContent = tourney.name || 'No tournament data';
+  document.getElementById('tourneyPurse').textContent = formatMoney(tourney.purse);
+  document.getElementById('tourneyType').textContent = tourney.type || '—';
+  const tierTag = document.getElementById('tourneyTier');
+  tierTag.textContent = 'Tier ' + (tourney.tier || '?');
+  tierTag.className = 'tag tag-tier' + (tourney.tier || 1);
+
+  // Picks
+  const picksList = document.getElementById('picksList');
+  const recs = tw.recommendations || [];
+  if (recs.length === 0) {
+    picksList.innerHTML = '<div class="no-data"><div class="no-data-text">No recommendations yet this week.</div></div>';
+  } else {
+    picksList.innerHTML = recs.map((r, i) => {
+      const rankClass = r.rank <= 3 ? 'top3' : r.rank <= 6 ? 'top6' : 'rest';
+      const scoreClass = r.composite >= 8 ? 'high' : r.composite >= 5 ? 'mid' : 'low';
+      const oddsDisplay = r.odds || ('#' + r.odds_position);
+      return `
+        <div class="pick-row expandable" onclick="toggleExpand(${i})">
+          <div class="pick-rank ${rankClass}">${r.rank}</div>
+          <div class="pick-info">
+            <div class="pick-name">${r.name}</div>
+            <div class="pick-detail">DG #${r.world_rank} · Odds: ${oddsDisplay} · Fit: ${r.course_fit}/5 · Form: ${r.form}/5</div>
+          </div>
+          <div class="pick-score ${scoreClass}">${r.composite.toFixed(1)}</div>
+        </div>
+        <div class="pick-expand" id="expand-${i}">
+          <div class="detail-grid">
+            <div class="detail-item"><div class="d-label">DG Rank</div><div class="d-value">#${r.world_rank}</div></div>
+            <div class="detail-item"><div class="d-label">Value</div><div class="d-value">${(r.value_score || 0).toFixed(2)}</div></div>
+            <div class="detail-item"><div class="d-label">Course</div><div class="d-value">${r.course_fit}/5</div></div>
+            <div class="detail-item"><div class="d-label">Form</div><div class="d-value">${r.form}/5</div></div>
+          </div>
+          <div class="pick-notes">${r.notes || ''}</div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  // Save for later
+  const saves = tw.save_for_later || [];
+  const saveCard = document.getElementById('saveCard');
+  if (saves.length > 0) {
+    saveCard.style.display = 'block';
+    document.getElementById('saveList').innerHTML = saves.map(s =>
+      `<div class="alert-row"><div class="alert-name">${s.name}</div><div class="alert-reason">${s.reason}</div></div>`
+    ).join('');
+  }
+
+  // Injury watch
+  const injuries = tw.injury_watch || [];
+  const injuryCard = document.getElementById('injuryCard');
+  if (injuries.length > 0) {
+    injuryCard.style.display = 'block';
+    document.getElementById('injuryList').innerHTML = injuries.map(inj =>
+      `<div class="alert-row"><div class="alert-name">${inj.name} <span class="tag tag-injury">Watch</span></div><div class="alert-reason">${inj.concern}</div></div>`
+    ).join('');
+  }
+
+  // Upcoming tier 1
+  const upcoming = tw.upcoming_tier1 || [];
+  const tier1List = document.getElementById('tier1List');
+  if (upcoming.length > 0) {
+    tier1List.innerHTML = upcoming.map(ev =>
+      `<div class="tier1-row">
+        <div class="tier1-weeks"><div class="num">${ev.weeks_away || '?'}</div><div class="wk">wks</div></div>
+        <div class="tier1-info">
+          <div class="tier1-name">${ev.name} <span class="tag ${ev.type === 'Major' ? 'tag-major' : 'tag-tier1'}">${ev.type || 'Tier 1'}</span></div>
+          <div class="tier1-detail">${ev.month || ''} · ${formatMoney(ev.purse)}</div>
+        </div>
+      </div>`
+    ).join('');
+  }
+
+  // Season schedule
+  const seasonList = document.getElementById('seasonList');
+  const nextIdx = sched.findIndex(e => e.status === 'upcoming');
+  seasonList.innerHTML = sched.map((ev, i) => {
+    const isCurrent = (i === nextIdx);
+    const statusClass = ev.status === 'done' ? 'done' : isCurrent ? 'current' : 'upcoming';
+    const tierTag = `<span class="tag tag-tier${ev.tier}">T${ev.tier}</span>`;
+    let pickHtml = '';
+    if (ev.pick) {
+      const earnings = ev.earnings || 0;
+      const resultClass = earnings > 0 ? 'positive' : 'zero';
+      pickHtml = `<div class="event-pick">
+        <div class="event-pick-name">${ev.pick}</div>
+        <div class="event-pick-result ${resultClass}">${ev.result || ''} · ${formatMoney(earnings)}</div>
+      </div>`;
+    } else if (isCurrent) {
+      pickHtml = '<div class="event-pick"><div class="event-pick-name" style="color:var(--gold)">This Week</div></div>';
+    }
+    return `<div class="event-row">
+      <div class="event-status ${statusClass}"></div>
+      <div class="event-info">
+        <div class="event-name">${ev.name} ${tierTag}</div>
+        <div class="event-meta-line">${ev.month} · ${formatMoney(ev.purse)} · ${ev.type}</div>
+      </div>
+      ${pickHtml}
+    </div>`;
+  }).join('');
+
+  // Used players
+  const usedGrid = document.getElementById('usedGrid');
+  document.getElementById('usedCount').textContent = used.length;
+  usedGrid.innerHTML = used.map(p => {
+    const earningsClass = (p.earnings || 0) > 0 ? 'positive' : 'zero';
+    return `<div class="used-chip">
+      <div class="chip-name">${p.name}</div>
+      <div class="chip-event">${p.tournament}</div>
+      <div class="chip-earnings ${earningsClass}">${p.result} · ${formatMoney(p.earnings || 0)}</div>
+    </div>`;
+  }).join('');
+
+  // Footer
+  document.getElementById('footer').textContent =
+    'Data: Data Golf Rankings · Odds: DraftKings · Updated ' + (tw.generated_at || 'N/A');
+}
+
+function toggleExpand(i) {
+  document.getElementById('expand-' + i).classList.toggle('open');
+}
+
+// Tab switching
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById(tab.dataset.tab).classList.add('active');
+  });
+});
+
+loadData();
+</script>
+</body>
+</html>
