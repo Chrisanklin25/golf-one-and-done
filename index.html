@@ -306,6 +306,73 @@
   .detail-item .d-label { font-size: 9px; text-transform: uppercase; color: #999; }
   .detail-item .d-value { font-size: 13px; font-weight: 600; }
   .pick-notes { font-style: italic; margin-top: 4px; }
+
+  /* Methodology tab */
+  .method-section { margin-bottom: 20px; }
+  .method-section h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .method-section p {
+    font-size: 13px;
+    color: var(--text);
+    margin-bottom: 8px;
+    line-height: 1.6;
+  }
+  .tier-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    margin: 8px 0 12px;
+  }
+  .tier-table th {
+    background: var(--navy);
+    color: white;
+    padding: 8px 10px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 11px;
+  }
+  .tier-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--border);
+  }
+  .tier-table tr:nth-child(even) td { background: var(--gray); }
+  .formula-box {
+    background: var(--navy);
+    color: white;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-family: monospace;
+    font-size: 13px;
+    margin: 8px 0;
+    text-align: center;
+    letter-spacing: 0.5px;
+  }
+  .scale-row {
+    display: flex;
+    align-items: center;
+    padding: 4px 0;
+    font-size: 12px;
+    gap: 8px;
+  }
+  .scale-num {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 11px;
+    flex-shrink: 0;
+  }
 </style>
 </head>
 <body>
@@ -333,6 +400,7 @@
   <div class="tab active" data-tab="picks">This Week</div>
   <div class="tab" data-tab="season">Season</div>
   <div class="tab" data-tab="used">Used</div>
+  <div class="tab" data-tab="method">How It Works</div>
 </div>
 
 <div class="content">
@@ -397,6 +465,93 @@
       <div class="card-header">Players Used (<span id="usedCount">0</span> of 40)</div>
       <div class="used-grid" id="usedGrid"></div>
     </div>
+  </div>
+
+  <!-- HOW IT WORKS TAB -->
+  <div class="section" id="method">
+
+    <div class="card">
+      <div class="card-header" style="background:var(--navy); color:white;">The Pool</div>
+      <div class="card-body" style="padding-top:12px;">
+        <div class="method-section">
+          <p>CRUS11TOUR is a golf survivor (one-and-done) pool on Splash Sports. Pick one golfer per tournament. Points equal their dollar earnings. Once you use a player, they're gone for the season. 40 players available across 30 events — resource management is everything.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" style="background:var(--navy); color:white;">Event Tiers</div>
+      <div class="card-body" style="padding-top:12px;">
+        <div class="method-section">
+          <p>Events are tiered by purse size and prestige. Since points = earnings, higher-purse events offer more upside for your best players.</p>
+          <table class="tier-table">
+            <tr><th>Tier</th><th>Events</th><th>Purse Range</th><th>Strategy</th></tr>
+            <tr><td><span class="tag tag-tier1">Tier 1</span></td><td>Majors, Signature, Players, FedEx</td><td>$17M — $100M</td><td>Use your best available players here</td></tr>
+            <tr><td><span class="tag tag-tier2">Tier 2</span></td><td>Above-average purse events</td><td>$8M — $9.1M</td><td>Good value picks — strong players at lower risk</td></tr>
+            <tr><td><span class="tag tag-tier3">Tier 3</span></td><td>Standard tour events</td><td>$4M — $8.7M</td><td>Use mid-ranked players, save elites</td></tr>
+          </table>
+          <p>The key tradeoff: using Scheffler at a $7.5M event "works" but wastes his upside. Save him for a Major ($20M+) where a win earns 3x as much.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" style="background:var(--navy); color:white;">Player Scoring</div>
+      <div class="card-body" style="padding-top:12px;">
+        <div class="method-section">
+          <h3>Rankings: Data Golf</h3>
+          <p>We use Data Golf rankings instead of the Official World Golf Rankings (OWGR). Why? OWGR penalizes LIV Golf players who play fewer sanctioned events, making them look artificially weak. At Majors, where LIV players compete, OWGR rankings would underestimate players like Rahm, Koepka, or DeChambeau. Data Golf's model is based on actual scoring ability, making it fairer across tours.</p>
+        </div>
+        <div class="method-section">
+          <h3>The composite score</h3>
+          <p>Each available player gets scored on five factors that combine into a single number:</p>
+          <div class="formula-box">Score = (Value x 3) + Course Fit + Form + Injury</div>
+        </div>
+        <div class="method-section">
+          <h3>Value score</h3>
+          <p>How "underpriced" a player is by the betting market.</p>
+          <div class="formula-box">Value = DG Rank / Odds Position</div>
+          <p>If a player is ranked #5 in the world but only the 10th betting favorite (odds position = 10), their value score is 5/10 = 0.5. If they're ranked #5 and the 3rd favorite, value = 5/3 = 1.67. Higher value = the market is sleeping on them relative to their actual skill. This gets triple-weighted because finding undervalued picks is the biggest edge in a survivor pool.</p>
+        </div>
+        <div class="method-section">
+          <h3>Course fit (1-5)</h3>
+          <div class="scale-row"><div class="scale-num">5</div> Past winner at this course</div>
+          <div class="scale-row"><div class="scale-num">4</div> Multiple top-10 finishes here</div>
+          <div class="scale-row"><div class="scale-num">3</div> Average or unknown fit</div>
+          <div class="scale-row"><div class="scale-num">2</div> Poor historical results at this course</div>
+          <div class="scale-row"><div class="scale-num">1</div> Documented struggles here</div>
+        </div>
+        <div class="method-section">
+          <h3>Form (1-5)</h3>
+          <div class="scale-row"><div class="scale-num">5</div> Won in the last 2-3 weeks</div>
+          <div class="scale-row"><div class="scale-num">4</div> Multiple top-10s in last month</div>
+          <div class="scale-row"><div class="scale-num">3</div> Making cuts consistently</div>
+          <div class="scale-row"><div class="scale-num">2</div> Missing cuts, cold stretch</div>
+          <div class="scale-row"><div class="scale-num">1</div> Extended struggles or returning from break</div>
+        </div>
+        <div class="method-section">
+          <h3>Injury penalty</h3>
+          <p>Withdrawals are the worst outcome in survivor — you burn a player and get zero points. The penalty is harsh by design:</p>
+          <div class="scale-row"><div class="scale-num" style="background:var(--green);">0</div> Healthy — no concerns</div>
+          <div class="scale-row"><div class="scale-num" style="background:#D4A843;">-2</div> Minor concern — monitoring</div>
+          <div class="scale-row"><div class="scale-num" style="background:var(--red);">-10</div> Significant withdrawal risk — avoid</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" style="background:var(--navy); color:white;">Data Sources</div>
+      <div class="card-body" style="padding-top:12px;">
+        <div class="method-section">
+          <p><strong>Rankings:</strong> Data Golf (datagolf.com) — skill-based model, fair to all tours</p>
+          <p><strong>Odds:</strong> DraftKings sportsbook — used for betting odds and implied probability</p>
+          <p><strong>Course history:</strong> PGA Tour stats, tournament archives, and golf media</p>
+          <p><strong>Injuries:</strong> PGA Tour injury reports, beat writer coverage, Tuesday practice round updates</p>
+          <p>Updated every Wednesday by a scheduled AI task that researches all sources automatically.</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 </div>

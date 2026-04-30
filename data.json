@@ -9,7 +9,7 @@
     {
       "name": "Patrick Cantlay",
       "tournament": "Farmers Insurance Open",
-      "result": "Missed Cut",
+      "result": "MC",
       "earnings": 0
     },
     {
@@ -27,7 +27,7 @@
     {
       "name": "Russell Henley",
       "tournament": "The Genesis Invitational",
-      "result": "Missed Cut",
+      "result": "MC",
       "earnings": 0
     },
     {
@@ -41,6 +41,42 @@
       "tournament": "Arnold Palmer Invitational",
       "result": "T41",
       "earnings": 78000
+    },
+    {
+      "name": "Collin Morikawa",
+      "tournament": "The Players Championship",
+      "result": "WD",
+      "earnings": 0
+    },
+    {
+      "name": "Viktor Hovland",
+      "tournament": "Valspar Championship",
+      "result": "MC",
+      "earnings": 0
+    },
+    {
+      "name": "Jake Knapp",
+      "tournament": "Texas Children's Houston Open",
+      "result": "T6",
+      "earnings": 322988
+    },
+    {
+      "name": "Jordan Spieth",
+      "tournament": "Valero Texas Open",
+      "result": "T63",
+      "earnings": 21364
+    },
+    {
+      "name": "Jon Rahm",
+      "tournament": "Masters Tournament",
+      "result": "T38",
+      "earnings": 101250
+    },
+    {
+      "name": "Xander Schauffele",
+      "tournament": "RBC Heritage",
+      "result": "T12",
+      "earnings": 399250
     }
   ],
   "schedule": [
@@ -53,7 +89,7 @@
       "type": "Standard",
       "status": "done",
       "pick": "Patrick Cantlay",
-      "result": "Missed Cut",
+      "result": "MC",
       "earnings": 0
     },
     {
@@ -89,7 +125,7 @@
       "type": "Signature",
       "status": "done",
       "pick": "Russell Henley",
-      "result": "Missed Cut",
+      "result": "MC",
       "earnings": 0
     },
     {
@@ -123,9 +159,9 @@
       "purse": 25000000,
       "tier": 1,
       "type": "Players",
-      "status": "upcoming",
-      "pick": null,
-      "result": null,
+      "status": "done",
+      "pick": "Collin Morikawa",
+      "result": "WD",
       "earnings": 0
     },
     {
@@ -135,9 +171,9 @@
       "purse": 8700000,
       "tier": 3,
       "type": "Standard",
-      "status": "upcoming",
-      "pick": null,
-      "result": null,
+      "status": "done",
+      "pick": "Viktor Hovland",
+      "result": "MC",
       "earnings": 0
     },
     {
@@ -147,10 +183,10 @@
       "purse": 8700000,
       "tier": 3,
       "type": "Standard",
-      "status": "upcoming",
-      "pick": null,
-      "result": null,
-      "earnings": 0
+      "status": "done",
+      "pick": "Jake Knapp",
+      "result": "T6",
+      "earnings": 322988
     },
     {
       "num": 10,
@@ -159,10 +195,10 @@
       "purse": 8700000,
       "tier": 3,
       "type": "Standard",
-      "status": "upcoming",
-      "pick": null,
-      "result": null,
-      "earnings": 0
+      "status": "done",
+      "pick": "Jordan Spieth",
+      "result": "T63",
+      "earnings": 21364
     },
     {
       "num": 11,
@@ -171,10 +207,10 @@
       "purse": 20000000,
       "tier": 1,
       "type": "Major",
-      "status": "upcoming",
-      "pick": null,
-      "result": null,
-      "earnings": 0
+      "status": "done",
+      "pick": "Jon Rahm",
+      "result": "T38",
+      "earnings": 101250
     },
     {
       "num": 12,
@@ -183,10 +219,10 @@
       "purse": 8700000,
       "tier": 3,
       "type": "Standard",
-      "status": "upcoming",
-      "pick": null,
-      "result": null,
-      "earnings": 0
+      "status": "done",
+      "pick": "Xander Schauffele",
+      "result": "T12",
+      "earnings": 399250
     },
     {
       "num": 13,
@@ -406,11 +442,269 @@
     }
   ],
   "this_week": {
-    "generated_at": null,
-    "tournament": {},
-    "recommendations": [],
-    "save_for_later": [],
-    "injury_watch": [],
-    "upcoming_tier1": []
+    "generated_at": "2026-04-29 21:19",
+    "tournament": {
+      "name": "Cadillac Championship (Miami)",
+      "purse": 20000000,
+      "tier": 1,
+      "type": "Signature",
+      "month": "Apr/May 2026"
+    },
+    "players_used": 12,
+    "players_available": 28,
+    "recommendations": [
+      {
+        "rank": 1,
+        "name": "Min Woo Lee",
+        "world_rank": 22,
+        "odds_position": 3,
+        "odds": "+2200",
+        "value_score": 7.33,
+        "course_fit": 3,
+        "form": 4,
+        "injury_penalty": 0,
+        "composite": 29.0,
+        "notes": "Strong recent form, market loves him this week. Australian flair suits Doral"
+      },
+      {
+        "rank": 2,
+        "name": "Cameron Young",
+        "world_rank": 8,
+        "odds_position": 2,
+        "odds": "+1300",
+        "value_score": 4.0,
+        "course_fit": 3,
+        "form": 5,
+        "injury_penalty": 0,
+        "composite": 20.0,
+        "notes": "Red hot \u2014 T2 at Heritage, multiple top-10s. Great value at a Sig Event with weak field"
+      },
+      {
+        "rank": 3,
+        "name": "Chris Gotterup",
+        "world_rank": 18,
+        "odds_position": 5,
+        "odds": "+2700",
+        "value_score": 3.6,
+        "course_fit": 3,
+        "form": 4,
+        "injury_penalty": 0,
+        "composite": 17.8,
+        "notes": "Breakout 2026 season. Long hitter \u2014 advantage at 7,739-yard Blue Monster"
+      },
+      {
+        "rank": 4,
+        "name": "Adam Scott",
+        "world_rank": 20,
+        "odds_position": 7,
+        "odds": "+3300",
+        "value_score": 2.86,
+        "course_fit": 4,
+        "form": 3,
+        "injury_penalty": 0,
+        "composite": 15.6,
+        "notes": "Won last PGA event at Doral in 2016! Course specialist if anyone is"
+      },
+      {
+        "rank": 5,
+        "name": "Tommy Fleetwood",
+        "world_rank": 9,
+        "odds_position": 4,
+        "odds": "+2700",
+        "value_score": 2.25,
+        "course_fit": 3,
+        "form": 4,
+        "injury_penalty": 0,
+        "composite": 13.8,
+        "notes": "Consistent top-10 machine. Good ball-striker for Blue Monster's length"
+      },
+      {
+        "rank": 6,
+        "name": "Sam Burns",
+        "world_rank": 13,
+        "odds_position": 6,
+        "odds": "+3000",
+        "value_score": 2.17,
+        "course_fit": 3,
+        "form": 3,
+        "injury_penalty": 0,
+        "composite": 12.5,
+        "notes": "Solid but not spectacular recently. Big game player at Signature Events"
+      },
+      {
+        "rank": 7,
+        "name": "Justin Rose",
+        "world_rank": 19,
+        "odds_position": 11,
+        "odds": "+4000",
+        "value_score": 1.73,
+        "course_fit": 4,
+        "form": 3,
+        "injury_penalty": 0,
+        "composite": 12.2,
+        "notes": "Won at Doral 2012. Veteran course knowledge on Blue Monster"
+      },
+      {
+        "rank": 8,
+        "name": "Jacob Bridgeman",
+        "world_rank": 17,
+        "odds_position": 10,
+        "odds": "+4000",
+        "value_score": 1.7,
+        "course_fit": 3,
+        "form": 4,
+        "injury_penalty": 0,
+        "composite": 12.1,
+        "notes": "Strong ball-striking stats, emerging talent"
+      },
+      {
+        "rank": 9,
+        "name": "Harris English",
+        "world_rank": 15,
+        "odds_position": 8,
+        "odds": "+3500",
+        "value_score": 1.88,
+        "course_fit": 3,
+        "form": 3,
+        "injury_penalty": 0,
+        "composite": 11.6,
+        "notes": "Steady performer, good in hot weather conditions"
+      },
+      {
+        "rank": 10,
+        "name": "Rickie Fowler",
+        "world_rank": 25,
+        "odds_position": 14,
+        "odds": "+5000",
+        "value_score": 1.79,
+        "course_fit": 3,
+        "form": 3,
+        "injury_penalty": 0,
+        "composite": 11.4,
+        "notes": "Veteran presence, has played Doral before in WGC era"
+      },
+      {
+        "rank": 11,
+        "name": "Maverick McNealy",
+        "world_rank": 16,
+        "odds_position": 9,
+        "odds": "+3500",
+        "value_score": 1.78,
+        "course_fit": 3,
+        "form": 3,
+        "injury_penalty": 0,
+        "composite": 11.3,
+        "notes": "Consistent cutter, rarely misses weekends"
+      },
+      {
+        "rank": 12,
+        "name": "Scottie Scheffler",
+        "world_rank": 1,
+        "odds_position": 1,
+        "odds": "+310",
+        "value_score": 1.0,
+        "course_fit": 3,
+        "form": 5,
+        "injury_penalty": 0,
+        "composite": 11.0,
+        "notes": "World #1, dominant season. Never played Doral as pro. Save for PGA Championship?"
+      },
+      {
+        "rank": 13,
+        "name": "Shane Lowry",
+        "world_rank": 21,
+        "odds_position": 14,
+        "odds": "+5000",
+        "value_score": 1.5,
+        "course_fit": 3,
+        "form": 3,
+        "injury_penalty": 0,
+        "composite": 10.5,
+        "notes": "Steady, rarely terrible. Good floor pick"
+      },
+      {
+        "rank": 14,
+        "name": "Sepp Straka",
+        "world_rank": 24,
+        "odds_position": 18,
+        "odds": "+6000",
+        "value_score": 1.33,
+        "course_fit": 3,
+        "form": 3,
+        "injury_penalty": 0,
+        "composite": 10.0,
+        "notes": "Quiet consistency, sneaky good value"
+      },
+      {
+        "rank": 15,
+        "name": "Akshay Bhatia",
+        "world_rank": 14,
+        "odds_position": 13,
+        "odds": "+5000",
+        "value_score": 1.08,
+        "course_fit": 3,
+        "form": 3,
+        "injury_penalty": 0,
+        "composite": 9.2,
+        "notes": "Talented but inconsistent. Big upside weeks"
+      }
+    ],
+    "save_for_later": [
+      {
+        "name": "Scottie Scheffler",
+        "reason": "PGA Championship in 2 weeks ($19.4M, Major). Scheffler has won at Quail Hollow and has never played Doral. Save him for PGA unless you want to use him here."
+      }
+    ],
+    "injury_watch": [
+      {
+        "name": "Patrick Cantlay",
+        "concern": "Withdrew from Cadillac Championship due to illness \u2014 already used anyway"
+      },
+      {
+        "name": "Collin Morikawa",
+        "concern": "Back injury (WD at Players). Returned for Heritage but monitor \u2014 already used anyway"
+      },
+      {
+        "name": "Jake Knapp",
+        "concern": "Injury concerns reported this week \u2014 already used anyway"
+      }
+    ],
+    "upcoming_tier1": [
+      {
+        "name": "PGA Championship",
+        "month": "May 2026",
+        "purse": 19400000,
+        "type": "Major",
+        "weeks_away": 2
+      },
+      {
+        "name": "The Memorial Tournament",
+        "month": "Jun 2026",
+        "purse": 20000000,
+        "type": "Signature",
+        "weeks_away": 5
+      },
+      {
+        "name": "U.S. Open",
+        "month": "Jun 2026",
+        "purse": 21500000,
+        "type": "Major",
+        "weeks_away": 7
+      },
+      {
+        "name": "The Open Championship",
+        "month": "Jul 2026",
+        "purse": 17000000,
+        "type": "Major",
+        "weeks_away": 11
+      },
+      {
+        "name": "FedEx St. Jude Championship",
+        "month": "Aug 2026",
+        "purse": 20000000,
+        "type": "FedEx",
+        "weeks_away": 15
+      }
+    ]
   }
 }
