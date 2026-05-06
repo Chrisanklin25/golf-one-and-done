@@ -596,6 +596,21 @@ function render() {
   document.getElementById('lastUpdated').textContent =
     tw.generated_at ? 'Updated: ' + tw.generated_at : 'Season 2026';
 
+  // Login-required banner (Splash Sports session expired)
+  const existingBanner = document.getElementById('loginBanner');
+  if (existingBanner) existingBanner.remove();
+  if (tw.login_required) {
+    const banner = document.createElement('div');
+    banner.id = 'loginBanner';
+    banner.style.cssText = 'background:#fff4d6;border:1px solid #f0c040;border-left:6px solid #f0c040;color:#5a4500;padding:14px 18px;margin:0 0 16px 0;border-radius:8px;font-size:14px;line-height:1.45;';
+    banner.innerHTML = '<strong>⚠ Action needed:</strong> ' +
+      (tw.login_required.message || 'Splash Sports login required.') +
+      ' <a href="https://app.splashsports.com/" target="_blank" style="color:#5a4500;text-decoration:underline;font-weight:600;">Log in →</a>' +
+      '<div style="font-size:12px;opacity:0.7;margin-top:4px;">Flagged ' + (tw.login_required.flagged_at || '') + '</div>';
+    const main = document.querySelector('main') || document.body;
+    main.insertBefore(banner, main.firstChild);
+  }
+
   // Tournament card
   document.getElementById('tourneyName').textContent = tourney.name || 'No tournament data';
   document.getElementById('tourneyPurse').textContent = formatMoney(tourney.purse);
