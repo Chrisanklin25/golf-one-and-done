@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-29",
+  "last_updated": "2026-05-06",
   "season": {
     "pool_name": "CRUS11TOUR",
     "total_events": 30,
@@ -77,6 +77,12 @@
       "tournament": "RBC Heritage",
       "result": "T12",
       "earnings": 399250
+    },
+    {
+      "name": "Chris Gotterup",
+      "tournament": "Cadillac Championship",
+      "result": "T38",
+      "earnings": 72182
     }
   ],
   "schedule": [
@@ -226,23 +232,23 @@
     },
     {
       "num": 13,
-      "name": "Miami Championship",
-      "month": "Apr 2026",
-      "purse": 4000000,
-      "tier": 3,
-      "type": "Standard",
-      "status": "upcoming",
-      "pick": null,
-      "result": null,
-      "earnings": 0
+      "name": "Cadillac Championship",
+      "month": "Apr/May 2026",
+      "purse": 20000000,
+      "tier": 1,
+      "type": "Signature",
+      "status": "done",
+      "pick": "Chris Gotterup",
+      "result": "T38",
+      "earnings": 72182
     },
     {
       "num": 14,
       "name": "Truist Championship",
       "month": "May 2026",
-      "purse": 8700000,
-      "tier": 3,
-      "type": "Standard",
+      "purse": 20000000,
+      "tier": 1,
+      "type": "Signature",
       "status": "upcoming",
       "pick": null,
       "result": null,
@@ -442,231 +448,225 @@
     }
   ],
   "this_week": {
-    "generated_at": "2026-04-29 21:19",
+    "generated_at": "2026-05-06 14:27",
     "tournament": {
-      "name": "Cadillac Championship (Miami)",
+      "name": "Truist Championship",
       "purse": 20000000,
       "tier": 1,
       "type": "Signature",
-      "month": "Apr/May 2026"
+      "month": "May 2026"
     },
-    "players_used": 12,
-    "players_available": 28,
     "recommendations": [
       {
         "rank": 1,
-        "name": "Min Woo Lee",
-        "world_rank": 22,
-        "odds_position": 3,
-        "odds": "+2200",
-        "value_score": 7.33,
-        "course_fit": 3,
-        "form": 4,
+        "name": "Rory McIlroy",
+        "world_rank": 2,
+        "odds_position": 1,
+        "odds": "+550",
+        "value_score": 2.0,
+        "course_fit": 5,
+        "form": 5,
         "injury_penalty": 0,
-        "composite": 29.0,
-        "notes": "Strong recent form, market loves him this week. Australian flair suits Doral"
+        "composite": 16.0,
+        "notes": "4-time winner at Quail Hollow (2010/15/21/24) \u2014 most dominant track of his career. Coming off back-to-back Masters wins. Heavy favorite at his happiest course. THE pick this week."
       },
       {
         "rank": 2,
-        "name": "Cameron Young",
-        "world_rank": 8,
-        "odds_position": 2,
-        "odds": "+1300",
-        "value_score": 4.0,
+        "name": "Adam Scott",
+        "world_rank": 20,
+        "odds_position": 8,
+        "odds": "+3300",
+        "value_score": 2.5,
         "course_fit": 3,
-        "form": 5,
+        "form": 3,
         "injury_penalty": 0,
-        "composite": 20.0,
-        "notes": "Red hot \u2014 T2 at Heritage, multiple top-10s. Great value at a Sig Event with weak field"
+        "composite": 13.5,
+        "notes": "Solid course fit for long, demanding tracks. Strong market value \u2014 bookmakers see something the rankings don't."
       },
       {
         "rank": 3,
-        "name": "Chris Gotterup",
-        "world_rank": 18,
-        "odds_position": 5,
-        "odds": "+2700",
-        "value_score": 3.6,
+        "name": "Min Woo Lee",
+        "world_rank": 22,
+        "odds_position": 9,
+        "odds": "+3500",
+        "value_score": 2.44,
         "course_fit": 3,
         "form": 4,
         "injury_penalty": 0,
-        "composite": 17.8,
-        "notes": "Breakout 2026 season. Long hitter \u2014 advantage at 7,739-yard Blue Monster"
+        "composite": 14.33,
+        "notes": "Distance-friendly track suits his profile. Continues to be a market favorite \u2014 strong form indicator."
       },
       {
         "rank": 4,
-        "name": "Adam Scott",
-        "world_rank": 20,
-        "odds_position": 7,
-        "odds": "+3300",
-        "value_score": 2.86,
-        "course_fit": 4,
-        "form": 3,
-        "injury_penalty": 0,
-        "composite": 15.6,
-        "notes": "Won last PGA event at Doral in 2016! Course specialist if anyone is"
-      },
-      {
-        "rank": 5,
-        "name": "Tommy Fleetwood",
-        "world_rank": 9,
-        "odds_position": 4,
-        "odds": "+2700",
-        "value_score": 2.25,
-        "course_fit": 3,
-        "form": 4,
-        "injury_penalty": 0,
-        "composite": 13.8,
-        "notes": "Consistent top-10 machine. Good ball-striker for Blue Monster's length"
-      },
-      {
-        "rank": 6,
-        "name": "Sam Burns",
-        "world_rank": 13,
-        "odds_position": 6,
-        "odds": "+3000",
-        "value_score": 2.17,
-        "course_fit": 3,
-        "form": 3,
-        "injury_penalty": 0,
-        "composite": 12.5,
-        "notes": "Solid but not spectacular recently. Big game player at Signature Events"
-      },
-      {
-        "rank": 7,
-        "name": "Justin Rose",
-        "world_rank": 19,
-        "odds_position": 11,
-        "odds": "+4000",
-        "value_score": 1.73,
-        "course_fit": 4,
-        "form": 3,
-        "injury_penalty": 0,
-        "composite": 12.2,
-        "notes": "Won at Doral 2012. Veteran course knowledge on Blue Monster"
-      },
-      {
-        "rank": 8,
-        "name": "Jacob Bridgeman",
-        "world_rank": 17,
-        "odds_position": 10,
-        "odds": "+4000",
-        "value_score": 1.7,
-        "course_fit": 3,
-        "form": 4,
-        "injury_penalty": 0,
-        "composite": 12.1,
-        "notes": "Strong ball-striking stats, emerging talent"
-      },
-      {
-        "rank": 9,
-        "name": "Harris English",
-        "world_rank": 15,
-        "odds_position": 8,
-        "odds": "+3500",
-        "value_score": 1.88,
-        "course_fit": 3,
-        "form": 3,
-        "injury_penalty": 0,
-        "composite": 11.6,
-        "notes": "Steady performer, good in hot weather conditions"
-      },
-      {
-        "rank": 10,
-        "name": "Rickie Fowler",
-        "world_rank": 25,
-        "odds_position": 14,
-        "odds": "+5000",
-        "value_score": 1.79,
-        "course_fit": 3,
-        "form": 3,
-        "injury_penalty": 0,
-        "composite": 11.4,
-        "notes": "Veteran presence, has played Doral before in WGC era"
-      },
-      {
-        "rank": 11,
-        "name": "Maverick McNealy",
-        "world_rank": 16,
-        "odds_position": 9,
-        "odds": "+3500",
-        "value_score": 1.78,
-        "course_fit": 3,
-        "form": 3,
-        "injury_penalty": 0,
-        "composite": 11.3,
-        "notes": "Consistent cutter, rarely misses weekends"
-      },
-      {
-        "rank": 12,
-        "name": "Scottie Scheffler",
-        "world_rank": 1,
-        "odds_position": 1,
-        "odds": "+310",
-        "value_score": 1.0,
+        "name": "Cameron Young",
+        "world_rank": 4,
+        "odds_position": 2,
+        "odds": "+950",
+        "value_score": 2.0,
         "course_fit": 3,
         "form": 5,
         "injury_penalty": 0,
-        "composite": 11.0,
-        "notes": "World #1, dominant season. Never played Doral as pro. Save for PGA Championship?"
+        "composite": 14.0,
+        "notes": "Just won Cadillac wire-to-wire by 6 strokes. Two wins in last 4 starts. Heater pick \u2014 but #2 in odds means low survivor leverage vs. McIlroy."
+      },
+      {
+        "rank": 5,
+        "name": "Ben Griffin",
+        "world_rank": 25,
+        "odds_position": 13,
+        "odds": "+4000",
+        "value_score": 1.92,
+        "course_fit": 3,
+        "form": 5,
+        "injury_penalty": 0,
+        "composite": 13.77,
+        "notes": "Solo 3rd at Cadillac last week. Form is undeniable. Sneaky-good value vs. the favorites."
+      },
+      {
+        "rank": 6,
+        "name": "Rickie Fowler",
+        "world_rank": 27,
+        "odds_position": 11,
+        "odds": "+3500",
+        "value_score": 2.45,
+        "course_fit": 4,
+        "form": 3,
+        "injury_penalty": 0,
+        "composite": 14.36,
+        "notes": "2012 Wells Fargo winner here \u2014 knows the place cold. Market is bullish at +3500. Veteran value play."
+      },
+      {
+        "rank": 7,
+        "name": "Ludvig Aberg",
+        "world_rank": 8,
+        "odds_position": 5,
+        "odds": "+1800",
+        "value_score": 1.6,
+        "course_fit": 4,
+        "form": 4,
+        "injury_penalty": 0,
+        "composite": 12.8,
+        "notes": "Per analysts, 'perfect stylistic and statistical fit' for QH. Four top-5s in last five events. Strong second-tier elite pick."
+      },
+      {
+        "rank": 8,
+        "name": "Jason Day",
+        "world_rank": 33,
+        "odds_position": 19,
+        "odds": "+7500",
+        "value_score": 1.74,
+        "course_fit": 5,
+        "form": 2,
+        "injury_penalty": 0,
+        "composite": 12.21,
+        "notes": "2018 Wells Fargo winner at QH. Form has cooled, but course history elite. Bigger upside swing pick."
+      },
+      {
+        "rank": 9,
+        "name": "Brian Harman",
+        "world_rank": 30,
+        "odds_position": 18,
+        "odds": "+6000",
+        "value_score": 1.67,
+        "course_fit": 4,
+        "form": 3,
+        "injury_penalty": 0,
+        "composite": 12.0,
+        "notes": "2017 Wells Fargo champion (Eagle Point relocation). Steady ball-striker, fits course."
+      },
+      {
+        "rank": 10,
+        "name": "Max Homa",
+        "world_rank": 40,
+        "odds_position": 20,
+        "odds": "+8000",
+        "value_score": 2.0,
+        "course_fit": 5,
+        "form": 1,
+        "injury_penalty": 0,
+        "composite": 12.0,
+        "notes": "TWO past wins here (2019, 2022). On sponsor invite \u2014 form has deteriorated significantly. Course-fit dart, but risky."
+      },
+      {
+        "rank": 11,
+        "name": "Sepp Straka",
+        "world_rank": 15,
+        "odds_position": 12,
+        "odds": "+3500",
+        "value_score": 1.25,
+        "course_fit": 5,
+        "form": 3,
+        "injury_penalty": 0,
+        "composite": 11.75,
+        "notes": "DEFENDING CHAMPION at Truist. No one has gone back-to-back here, but course knowledge is real. Decent floor."
+      },
+      {
+        "rank": 12,
+        "name": "Tommy Fleetwood",
+        "world_rank": 7,
+        "odds_position": 6,
+        "odds": "+2200",
+        "value_score": 1.17,
+        "course_fit": 4,
+        "form": 4,
+        "injury_penalty": 0,
+        "composite": 11.5,
+        "notes": "Top-10 machine, suits long iron tests. Ball-striking carries him on demanding venues like QH."
       },
       {
         "rank": 13,
-        "name": "Shane Lowry",
-        "world_rank": 21,
-        "odds_position": 14,
-        "odds": "+5000",
-        "value_score": 1.5,
+        "name": "Robert MacIntyre",
+        "world_rank": 22,
+        "odds_position": 13,
+        "odds": "+3500",
+        "value_score": 1.69,
         "course_fit": 3,
         "form": 3,
         "injury_penalty": 0,
-        "composite": 10.5,
-        "notes": "Steady, rarely terrible. Good floor pick"
+        "composite": 11.08,
+        "notes": "Lefty with quality recent form. Fair-priced sleeper, decent ball-striker."
       },
       {
         "rank": 14,
-        "name": "Sepp Straka",
-        "world_rank": 24,
+        "name": "Sahith Theegala",
+        "world_rank": 28,
         "odds_position": 18,
-        "odds": "+6000",
-        "value_score": 1.33,
+        "odds": "+6500",
+        "value_score": 1.56,
         "course_fit": 3,
         "form": 3,
         "injury_penalty": 0,
-        "composite": 10.0,
-        "notes": "Quiet consistency, sneaky good value"
+        "composite": 10.67,
+        "notes": "Quietly consistent, big-time ceiling on Bermuda greens. Moderate dart pick."
       },
       {
         "rank": 15,
         "name": "Akshay Bhatia",
-        "world_rank": 14,
-        "odds_position": 13,
-        "odds": "+5000",
-        "value_score": 1.08,
+        "world_rank": 24,
+        "odds_position": 17,
+        "odds": "+5500",
+        "value_score": 1.41,
         "course_fit": 3,
         "form": 3,
         "injury_penalty": 0,
-        "composite": 9.2,
-        "notes": "Talented but inconsistent. Big upside weeks"
+        "composite": 10.24,
+        "notes": "Talented young lefty, length helps at QH. Inconsistent floor \u2014 boom-or-bust."
       }
     ],
     "save_for_later": [
       {
         "name": "Scottie Scheffler",
-        "reason": "PGA Championship in 2 weeks ($19.4M, Major). Scheffler has won at Quail Hollow and has never played Doral. Save him for PGA unless you want to use him here."
+        "reason": "Not in this week's field \u2014 Scheffler is skipping Truist. Save him for the PGA Championship (May 14-17 at Aronimink, $19.4M Major) just 1 week away. World #1 + Major = locked-in survivor pick."
+      },
+      {
+        "name": "Justin Rose",
+        "reason": "OWGR #5 with multiple top-10s at QH, but odds are flat (+3500). Better leverage available later \u2014 consider for Memorial Tournament (Jun, $20M Signature, 4 weeks away) or US Open (Jun, $21.5M Major, 5 weeks away)."
       }
     ],
     "injury_watch": [
       {
-        "name": "Patrick Cantlay",
-        "concern": "Withdrew from Cadillac Championship due to illness \u2014 already used anyway"
-      },
-      {
-        "name": "Collin Morikawa",
-        "concern": "Back injury (WD at Players). Returned for Heritage but monitor \u2014 already used anyway"
-      },
-      {
-        "name": "Jake Knapp",
-        "concern": "Injury concerns reported this week \u2014 already used anyway"
+        "name": "None of note this week",
+        "concern": "Mickelson WD from PGA Championship next week (not in Truist field anyway). No major injuries flagged for top-40 available pool."
       }
     ],
     "upcoming_tier1": [
@@ -675,35 +675,35 @@
         "month": "May 2026",
         "purse": 19400000,
         "type": "Major",
-        "weeks_away": 2
+        "weeks_away": 1
       },
       {
         "name": "The Memorial Tournament",
         "month": "Jun 2026",
         "purse": 20000000,
         "type": "Signature",
-        "weeks_away": 5
+        "weeks_away": 4
       },
       {
         "name": "U.S. Open",
         "month": "Jun 2026",
         "purse": 21500000,
         "type": "Major",
-        "weeks_away": 7
+        "weeks_away": 5
       },
       {
         "name": "The Open Championship",
         "month": "Jul 2026",
         "purse": 17000000,
         "type": "Major",
-        "weeks_away": 11
+        "weeks_away": 10
       },
       {
         "name": "FedEx St. Jude Championship",
         "month": "Aug 2026",
         "purse": 20000000,
         "type": "FedEx",
-        "weeks_away": 15
+        "weeks_away": 14
       }
     ]
   }
