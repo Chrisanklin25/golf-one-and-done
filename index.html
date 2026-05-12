@@ -718,34 +718,4 @@ function render() {
   const usedGrid = document.getElementById('usedGrid');
   document.getElementById('usedCount').textContent = used.length;
   usedGrid.innerHTML = used.map(p => {
-    const earningsClass = (p.earnings || 0) > 0 ? 'positive' : 'zero';
-    return `<div class="used-chip">
-      <div class="chip-name">${p.name}</div>
-      <div class="chip-event">${p.tournament}</div>
-      <div class="chip-earnings ${earningsClass}">${p.result} · ${formatMoney(p.earnings || 0)}</div>
-    </div>`;
-  }).join('');
-
-  // Footer
-  document.getElementById('footer').textContent =
-    'Data: Data Golf Rankings · Odds: DraftKings · Updated ' + (tw.generated_at || 'N/A');
-}
-
-function toggleExpand(i) {
-  document.getElementById('expand-' + i).classList.toggle('open');
-}
-
-// Tab switching
-document.querySelectorAll('.tab').forEach(tab => {
-  tab.addEventListener('click', () => {
-    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-    tab.classList.add('active');
-    document.getElementById(tab.dataset.tab).classList.add('active');
-  });
-});
-
-loadData();
-</script>
-</body>
-</html>
+    const 

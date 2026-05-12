@@ -5,64 +5,42 @@ Writes this week's recommendations to data.json and pushes to GitHub Pages.
 Called by the Wednesday scheduled task with JSON data:
     python update_dashboard.py '<json_string>'
 
-Or with --confirm-pick to record a pick:
+Or with --confirm-pick to record/update a pick (upsert, no duplicates):
     python update_dashboard.py --confirm-pick '<player_name>' '<tournament_name>' '<result>' <earnings>
 
-JSON format for weekly update:
-{
-  "generated_at": "2026-04-29 08:00",
-  "tournament": {
-    "name": "The Players Championship",
-    "purse": 25000000,
-    "tier": 1,
-    "type": "Players",
-    "month": "Mar 2026"
-  },
-  "players_used": 6,
-  "players_available": 34,
-  "recommendations": [
-    {
-      "rank": 1,
-      "name": "Tommy Fleetwood",
-      "world_rank": 4,
-      "odds_position": 3,
-      "odds": "+550",
-      "value_score": 1.33,
-      "course_fit": 4,
-      "form": 4,
-      "injury_penalty": 0,
-      "composite": 9.0,
-      "notes": "Strong TPC Sawgrass history"
-    }
-  ],
-  "save_for_later": [
-    {"name": "Scottie Scheffler", "reason": "Masters in 3 weeks — save for $20M purse"}
-  ],
-  "injury_watch": [
-    {"name": "Viktor Hovland", "concern": "Back tightness reported; monitor Tuesday"}
-  ],
-  "upcoming_tier1": [
-    {"name": "Masters Tournament", "month": "Apr 2026", "purse": 20000000, "type": "Major", "weeks_away": 3}
-  ]
-}
+Or with --flag-login to flag a Splash Sports logout state on the dashboard:
+    python update_dashboard.py --flag-login ['<optional custom message>']
 """
 
 import json
 import sys
 import os
-import subprocess
+import base64
+import datetime
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_PATH = os.path.join(SCRIPT_DIR, 'data.json')
 
-# ── GitHub settings ──
-# Set these environment variables or edit here:
-GITHUB_REPO = os.environ.get('GOLF_GITHUB_REPO', '')  # e.g. 'christopheranklin/golf-survivor'
-GITHUB_TOKEN = os.environ.get('GOLF_GITHUB_TOKEN', '')  # personal access token
+# GitHub settings
+GITHUB_REPO = 'chrisanklin25/golf-one-and-done'
+GITHUB_BRANCH = 'main'
+GITHUB_TOKEN = os.environ.get('GOLF_GITHUB_TOKEN', '')
+
+# Load token from .env or .env.txt if not in environment
+if not GITHUB_TOKEN:
+    for env_name in ['.env', '.env.txt']:
+        env_path = os.path.join(SCRIPT_DIR, env_name)
+        if os.path.exists(env_path):
+            with open(env_path) as f:
+                for line in f:
+                    if line.strip().startswith('GOLF_GITHUB_TOKEN='):
+                        GITHUB_TOKEN = line.strip().split('=', 1)[1].strip()
+                        break
+            if GITHUB_TOKEN:
+                break
 
 
 def load_data():
-    """Load the current data.json."""
     if os.path.exists(DATA_PATH):
         with open(DATA_PATH, 'r') as f:
             return json.load(f)
@@ -85,28 +63,63 @@ def load_data():
 
 
 def save_data(data):
-    """Save data.json locally."""
     with open(DATA_PATH, 'w') as f:
         json.dump(data, f, indent=2)
     print(f"Saved: {DATA_PATH}")
 
 
 def push_to_github():
-    """Push data.json to GitHub Pages repo via git."""
-    if not GITHUB_REPO:
-        print("No GITHUB_REPO configured — skipping push. Set GOLF_GITHUB_REPO env var.")
+    """Push data.json to GitHub via the REST API. No git clone needed."""
+    if not GITHUB_TOKEN:
+        print("No GOLF_GITHUB_TOKEN configured. Add it to .env file.")
         return False
 
     try:
-        # Try git push from the dashboard directory
-        os.chdir(SCRIPT_DIR)
-        subprocess.run(['git', 'add', 'data.json'], check=True, capture_output=True)
-        subprocess.run(['git', 'commit', '-m', 'Weekly update'], check=True, capture_output=True)
-        result = subprocess.run(['git', 'push'], check=True, capture_output=True, text=True)
-        print(f"Pushed to GitHub: {result.stdout}")
-        return True
-    except subprocess.CalledProcessError as e:
-        print(f"Git push failed: {e.stderr if hasattr(e, 'stderr') else e}")
+        import urllib.request
+        import urllib.error
+
+        api_url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/data.json"
+        headers = {
+            'Authorization': f'token {GITHUB_TOKEN}',
+            'Accept': 'application/vnd.github.v3+json',
+            'User-Agent': 'golf-survivor-updater'
+        }
+
+        # Get current file SHA (required for updates)
+        sha = None
+        try:
+            req = urllib.request.Request(api_url, headers=headers)
+            with urllib.request.urlopen(req) as resp:
+                existing = json.loads(resp.read().decode())
+                sha = existing.get('sha')
+        except urllib.error.HTTPError as e:
+            if e.code != 404:
+                raise
+
+        # Read and encode local data.json
+        with open(DATA_PATH, 'r') as f:
+            content = f.read()
+        encoded = base64.b64encode(content.encode()).decode()
+
+        # Push via Contents API
+        payload = {
+            'message': 'Weekly dashboard update',
+            'content': encoded,
+            'branch': GITHUB_BRANCH
+        }
+        if sha:
+            payload['sha'] = sha
+
+        req_body = json.dumps(payload).encode()
+        req = urllib.request.Request(api_url, data=req_body, headers=headers, method='PUT')
+        with urllib.request.urlopen(req) as resp:
+            result = json.loads(resp.read().decode())
+            print(f"Pushed to GitHub: {result['content']['html_url']}")
+            return True
+
+    except urllib.error.HTTPError as e:
+        error_body = e.read().decode() if hasattr(e, 'read') else str(e)
+        print(f"GitHub API error ({e.code}): {error_body}")
         return False
     except Exception as e:
         print(f"Push error: {e}")
@@ -114,18 +127,26 @@ def push_to_github():
 
 
 def confirm_pick(player_name, tournament_name, result, earnings):
-    """Record a confirmed pick in data.json."""
+    """Record a confirmed pick in data.json. Upserts — updates existing entry if present, else appends."""
     data = load_data()
 
-    # Add to used_players
-    data['used_players'].append({
-        'name': player_name,
-        'tournament': tournament_name,
-        'result': result,
-        'earnings': earnings
-    })
+    # Upsert into used_players (avoid duplicates)
+    updated_existing = False
+    for p in data['used_players']:
+        if p['name'] == player_name and p['tournament'] == tournament_name:
+            p['result'] = result
+            p['earnings'] = earnings
+            updated_existing = True
+            break
+    if not updated_existing:
+        data['used_players'].append({
+            'name': player_name,
+            'tournament': tournament_name,
+            'result': result,
+            'earnings': earnings
+        })
 
-    # Update the schedule entry
+    # Update the matching schedule event
     for event in data.get('schedule', []):
         if event['name'] == tournament_name:
             event['status'] = 'done'
@@ -134,66 +155,34 @@ def confirm_pick(player_name, tournament_name, result, earnings):
             event['earnings'] = earnings
             break
 
-    import datetime
-    data['last_updated'] = datetime.datetime.now().strftime('%Y-%m-%d')
+    # Clear any stale login-required banner once we've successfully recorded a pick
+    if 'login_required' in data.get('this_week', {}):
+        del data['this_week']['login_required']
 
+    data['last_updated'] = datetime.datetime.now().strftime('%Y-%m-%d')
     save_data(data)
     push_to_github()
-    print(f"Confirmed: {player_name} at {tournament_name} → {result} (${earnings:,})")
+    action = "Updated" if updated_existing else "Recorded"
+    print(f"{action}: {player_name} at {tournament_name} -> {result} (${earnings:,})")
 
 
-def weekly_update(update_json):
-    """Update this_week section with fresh recommendations."""
+def flag_login_required(message=None):
+    """Set a banner flag indicating Christopher needs to re-auth Splash Sports."""
     data = load_data()
-
-    # Replace the this_week section
-    data['this_week'] = {
-        'generated_at': update_json.get('generated_at'),
-        'tournament': update_json.get('tournament', {}),
-        'recommendations': update_json.get('recommendations', []),
-        'save_for_later': update_json.get('save_for_later', []),
-        'injury_watch': update_json.get('injury_watch', []),
-        'upcoming_tier1': update_json.get('upcoming_tier1', [])
+    data.setdefault('this_week', {})
+    data['this_week']['login_required'] = {
+        'flagged_at': datetime.datetime.now().strftime('%Y-%m-%d %H:%M'),
+        'message': message or "Splash Sports session expired. Log in at https://app.splashsports.com/ so the next Wednesday run can pull last week's result automatically."
     }
-
-    import datetime
     data['last_updated'] = datetime.datetime.now().strftime('%Y-%m-%d')
-
     save_data(data)
     push_to_github()
-
-    t_name = update_json.get('tournament', {}).get('name', 'Unknown')
-    recs = update_json.get('recommendations', [])
-    top = recs[0]['name'] if recs else 'N/A'
-    print(f"Done! '{t_name}' recommendations written.")
-    print(f"Top pick: {top}")
+    print("Login-required banner flagged.")
 
 
-def main():
-    if len(sys.argv) < 2:
-        print("Usage:")
-        print("  Weekly update:  python update_dashboard.py '<json_string>'")
-        print("  Confirm pick:   python update_dashboard.py --confirm-pick 'Player' 'Tournament' 'Result' earnings")
-        sys.exit(1)
-
-    if sys.argv[1] == '--confirm-pick':
-        if len(sys.argv) < 6:
-            print("Usage: python update_dashboard.py --confirm-pick 'Player Name' 'Tournament Name' 'Result' earnings")
-            sys.exit(1)
-        confirm_pick(
-            player_name=sys.argv[2],
-            tournament_name=sys.argv[3],
-            result=sys.argv[4],
-            earnings=int(sys.argv[5])
-        )
-    else:
-        try:
-            update_json = json.loads(sys.argv[1])
-        except json.JSONDecodeError as e:
-            print(f"Error parsing JSON: {e}")
-            sys.exit(1)
-        weekly_update(update_json)
-
-
-if __name__ == '__main__':
-    main()
+def clear_login_flag():
+    """Remove the login-required banner once Christopher has re-authenticated."""
+    data = load_data()
+    if 'login_required' in data.get('this_week', {}):
+        del data['this_week']['login_required']
+        data['last_up
