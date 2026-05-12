@@ -83,6 +83,12 @@
       "tournament": "Cadillac Championship",
       "result": "T38",
       "earnings": 72182
+    },
+    {
+      "name": "Rory McIlroy",
+      "tournament": "Truist Championship",
+      "result": "T19",
+      "earnings": 242100
     }
   ],
   "schedule": [
@@ -249,10 +255,10 @@
       "purse": 20000000,
       "tier": 1,
       "type": "Signature",
-      "status": "upcoming",
-      "pick": null,
-      "result": null,
-      "earnings": 0
+      "status": "done",
+      "pick": "Rory McIlroy",
+      "result": "T19",
+      "earnings": 242100
     },
     {
       "num": 15,
@@ -705,10 +711,6 @@
         "type": "FedEx",
         "weeks_away": 14
       }
-    ],
-    "login_required": {
-      "flagged_at": "2026-05-12 13:55",
-      "message": "Splash Sports session expired. Log in to re-enable automation."
-    }
+    ]
   }
 }
