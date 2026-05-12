@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-06",
+  "last_updated": "2026-05-12",
   "season": {
     "pool_name": "CRUS11TOUR",
     "total_events": 30,
@@ -705,6 +705,10 @@
         "type": "FedEx",
         "weeks_away": 14
       }
-    ]
+    ],
+    "login_required": {
+      "flagged_at": "2026-05-12 13:55",
+      "message": "Splash Sports session expired. Log in to re-enable automation."
+    }
   }
 }
