@@ -185,4 +185,76 @@ def clear_login_flag():
     data = load_data()
     if 'login_required' in data.get('this_week', {}):
         del data['this_week']['login_required']
-        data['last_up
+        data['last_updated'] = datetime.datetime.now().strftime('%Y-%m-%d')
+        save_data(data)
+        push_to_github()
+        print("Login-required banner cleared.")
+    else:
+        print("No login banner to clear.")
+
+
+def weekly_update(update_json):
+    """Update this_week section with fresh recommendations."""
+    data = load_data()
+
+    # Preserve login_required flag if present (don't overwrite it just because we ran a weekly update)
+    existing_login_flag = data.get('this_week', {}).get('login_required')
+
+    data['this_week'] = {
+        'generated_at': update_json.get('generated_at'),
+        'tournament': update_json.get('tournament', {}),
+        'recommendations': update_json.get('recommendations', []),
+        'save_for_later': update_json.get('save_for_later', []),
+        'injury_watch': update_json.get('injury_watch', []),
+        'upcoming_tier1': update_json.get('upcoming_tier1', [])
+    }
+    if existing_login_flag:
+        data['this_week']['login_required'] = existing_login_flag
+
+    data['last_updated'] = datetime.datetime.now().strftime('%Y-%m-%d')
+
+    save_data(data)
+    push_to_github()
+
+    t_name = update_json.get('tournament', {}).get('name', 'Unknown')
+    recs = update_json.get('recommendations', [])
+    top = recs[0]['name'] if recs else 'N/A'
+    print(f"Done! '{t_name}' recommendations written.")
+    print(f"Top pick: {top}")
+
+
+def main():
+    if len(sys.argv) < 2:
+        print("Usage:")
+        print("  Weekly update:  python update_dashboard.py '<json_string>'")
+        print("  Confirm pick:   python update_dashboard.py --confirm-pick 'Player' 'Tournament' 'Result' earnings")
+        print("  Flag logout:    python update_dashboard.py --flag-login ['custom message']")
+        print("  Clear logout:   python update_dashboard.py --clear-login")
+        sys.exit(1)
+
+    if sys.argv[1] == '--confirm-pick':
+        if len(sys.argv) < 6:
+            print("Usage: --confirm-pick 'Player' 'Tournament' 'Result' earnings")
+            sys.exit(1)
+        confirm_pick(
+            player_name=sys.argv[2],
+            tournament_name=sys.argv[3],
+            result=sys.argv[4],
+            earnings=int(sys.argv[5])
+        )
+    elif sys.argv[1] == '--flag-login':
+        msg = sys.argv[2] if len(sys.argv) >= 3 else None
+        flag_login_required(msg)
+    elif sys.argv[1] == '--clear-login':
+        clear_login_flag()
+    else:
+        try:
+            update_json = json.loads(sys.argv[1])
+        except json.JSONDecodeError as e:
+            print(f"Error parsing JSON: {e}")
+            sys.exit(1)
+        weekly_update(update_json)
+
+
+if __name__ == '__main__':
+    main()

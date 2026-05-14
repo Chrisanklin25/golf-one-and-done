@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-12",
+  "last_updated": "2026-05-14",
   "season": {
     "pool_name": "CRUS11TOUR",
     "total_events": 30,
@@ -454,7 +454,7 @@
     }
   ],
   "this_week": {
-    "generated_at": "2026-05-12 18:00",
+    "generated_at": "2026-05-14 19:50",
     "tournament": {
       "name": "PGA Championship",
       "purse": 19400000,
@@ -462,179 +462,168 @@
       "type": "Major",
       "month": "May 2026"
     },
+    "players_used": 14,
+    "players_available": 26,
     "recommendations": [
       {
         "rank": 1,
         "name": "Scottie Scheffler",
         "world_rank": 1,
         "odds_position": 1,
-        "odds": "+480",
+        "odds": "+390",
         "value_score": 1.0,
-        "course_fit": 4,
+        "course_fit": 5,
         "form": 5,
         "injury_penalty": 0,
-        "composite": 12.0,
-        "notes": "THE PICK. Defending PGA Champion (2025 at Quail Hollow). World #1 for 175+ weeks. T2 at Cadillac last week. This is the exact tournament we saved him for \u2014 use him here, lock in the win."
+        "composite": 13.0,
+        "notes": "Defending PGA Champion, world #1 (157 weeks), heavy favorite at +390. Aronimink rewards elite ball-striking \u2014 his bread and butter. THE pick at the Major. McIlroy/Rahm/Schauffele already used, so this is your one shot at the apex player."
       },
       {
         "rank": 2,
-        "name": "Cameron Young",
-        "world_rank": 4,
-        "odds_position": 3,
-        "odds": "+1200",
-        "value_score": 1.33,
-        "course_fit": 3,
-        "form": 5,
-        "injury_penalty": 0,
-        "composite": 12.0,
-        "notes": "Heater pick \u2014 won Cadillac wire-to-wire, T19 at Truist. Two wins in last 4 starts. Aronimink has no recent Major history so course fit is unknown across the field."
-      },
-      {
-        "rank": 3,
-        "name": "Brooks Koepka",
-        "world_rank": 25,
-        "odds_position": 15,
-        "odds": "+5000",
-        "value_score": 1.67,
-        "course_fit": 5,
-        "form": 2,
-        "injury_penalty": 0,
-        "composite": 12.0,
-        "notes": "5-time Major Champion, 2x PGA Champion (2018, 2019, 2023). Made for these. Form has cooled on LIV but Majors trigger his elite mode. High-variance dart."
-      },
-      {
-        "rank": 4,
-        "name": "Ben Griffin",
+        "name": "Keegan Bradley",
         "world_rank": 18,
-        "odds_position": 14,
-        "odds": "+4500",
-        "value_score": 1.29,
-        "course_fit": 3,
-        "form": 5,
-        "injury_penalty": 0,
-        "composite": 11.86,
-        "notes": "Solo 3rd at Cadillac. Riding hot form into his first PGA at this venue. Great value at +4500."
-      },
-      {
-        "rank": 5,
-        "name": "Jason Day",
-        "world_rank": 30,
-        "odds_position": 17,
-        "odds": "+7500",
-        "value_score": 1.76,
-        "course_fit": 4,
-        "form": 2,
-        "injury_penalty": 0,
-        "composite": 11.29,
-        "notes": "2015 PGA Champion. Veteran Major pedigree. Form cooled but knows how to peak for these. Tradition pick."
-      },
-      {
-        "rank": 6,
-        "name": "Justin Thomas",
-        "world_rank": 12,
         "odds_position": 12,
-        "odds": "+3500",
-        "value_score": 1.0,
+        "odds": "+5500",
+        "value_score": 1.5,
         "course_fit": 5,
         "form": 3,
         "injury_penalty": 0,
-        "composite": 11.0,
-        "notes": "2x PGA Champion (2017, 2022). PGA Championship is literally his best Major. Strong elite pick if you want a contrarian Major specialist."
+        "composite": 12.5,
+        "notes": "Won 2018 BMW Championship at Aronimink \u2014 owns this Donald Ross course. US Ryder Cup captain motivated for major moment. High-leverage differentiation play vs. chalk."
       },
       {
-        "rank": 7,
-        "name": "Ludvig Aberg",
-        "world_rank": 6,
-        "odds_position": 6,
-        "odds": "+1800",
-        "value_score": 1.0,
+        "rank": 3,
+        "name": "Tommy Fleetwood",
+        "world_rank": 10,
+        "odds_position": 7,
+        "odds": "+2500",
+        "value_score": 1.43,
         "course_fit": 4,
         "form": 4,
         "injury_penalty": 0,
+        "composite": 12.29,
+        "notes": "Elite ball-striker, fits Ross designs perfectly. 5 top-10s in 2026 including T5 last week at Truist. Still hunting first major \u2014 composed and ready."
+      },
+      {
+        "rank": 4,
+        "name": "Cameron Young",
+        "world_rank": 3,
+        "odds_position": 3,
+        "odds": "+1200",
+        "value_score": 1.0,
+        "course_fit": 4,
+        "form": 5,
+        "injury_penalty": 0,
+        "composite": 12.0,
+        "notes": "Hottest player on Tour \u2014 2 wins this year (Players, Cadillac), 6 top-10s in last 7 starts. Long, accurate driver suits Aronimink. Strong alternative to Scheffler with bigger differentiation upside."
+      },
+      {
+        "rank": 5,
+        "name": "Justin Rose",
+        "world_rank": 28,
+        "odds_position": 25,
+        "odds": "+8000",
+        "value_score": 1.12,
+        "course_fit": 5,
+        "form": 3,
+        "injury_penalty": 0,
+        "composite": 11.36,
+        "notes": "Won 2010 AT&T National at Aronimink. Course knowledge + veteran major experience. Long-shot differentiation play if you want to swing for fences."
+      },
+      {
+        "rank": 6,
+        "name": "Brooks Koepka",
+        "world_rank": 16,
+        "odds_position": 11,
+        "odds": "+5000",
+        "value_score": 1.45,
+        "course_fit": 4,
+        "form": 3,
+        "injury_penalty": 0,
+        "composite": 11.36,
+        "notes": "5-time major winner including 2 PGA Championships (2018, 2019, 2023). Major mode is real \u2014 he elevates in these weeks. Best of LIV crowd."
+      },
+      {
+        "rank": 7,
+        "name": "Justin Thomas",
+        "world_rank": 12,
+        "odds_position": 9,
+        "odds": "+3500",
+        "value_score": 1.33,
+        "course_fit": 4,
+        "form": 3,
+        "injury_penalty": 0,
         "composite": 11.0,
-        "notes": "Top-5s in 4 of last 5 events. Ball-striking elite \u2014 Donald Ross designs reward iron play. Strong second-tier pick if saving Scheffler for U.S. Open."
+        "notes": "2017 PGA Champion. Strong iron play fits Aronimink. Has been quietly building form. Solid mid-tier pick."
       },
       {
         "rank": 8,
         "name": "Min Woo Lee",
         "world_rank": 22,
-        "odds_position": 17,
+        "odds_position": 18,
         "odds": "+6000",
-        "value_score": 1.29,
+        "value_score": 1.22,
         "course_fit": 3,
         "form": 4,
         "injury_penalty": 0,
-        "composite": 10.88,
-        "notes": "Length advantage on long Major setup. Market still bullish at +6000."
+        "composite": 10.67,
+        "notes": "Distance + recent T-finishes at Cadillac and Truist. Aronimink length suits him. Market love at +6000."
       },
       {
         "rank": 9,
-        "name": "Tommy Fleetwood",
-        "world_rank": 7,
-        "odds_position": 8,
-        "odds": "+2500",
-        "value_score": 0.875,
-        "course_fit": 4,
+        "name": "Ludvig Aberg",
+        "world_rank": 6,
+        "odds_position": 5,
+        "odds": "+1800",
+        "value_score": 1.2,
+        "course_fit": 3,
         "form": 4,
         "injury_penalty": 0,
-        "composite": 10.63,
-        "notes": "Top-10 machine in Majors. Strong ball-striker fits Aronimink. Hasn't won a Major yet \u2014 that 'still chasing' status is a knock."
+        "composite": 10.6,
+        "notes": "Talented ball-striker but 0/2 cuts at PGA Championship in career. 5 of last 7 starts T5+. CBS experts fading him this week \u2014 proceed with caution."
       },
       {
         "rank": 10,
-        "name": "Sepp Straka",
-        "world_rank": 15,
-        "odds_position": 13,
-        "odds": "+4000",
-        "value_score": 1.15,
-        "course_fit": 3,
-        "form": 4,
+        "name": "Sungjae Im",
+        "world_rank": 25,
+        "odds_position": 22,
+        "odds": "+7000",
+        "value_score": 1.14,
+        "course_fit": 4,
+        "form": 3,
         "injury_penalty": 0,
-        "composite": 10.46,
-        "notes": "Just defended Truist (last week). Carrying hot form into Major week. Quiet consistency, low-variance floor."
+        "composite": 10.41,
+        "notes": "Steady iron play and cut-making \u2014 Aronimink rewards consistency. Quiet but reliable major performer."
       },
       {
         "rank": 11,
-        "name": "Tony Finau",
-        "world_rank": 25,
-        "odds_position": 18,
-        "odds": "+7000",
-        "value_score": 1.39,
-        "course_fit": 3,
+        "name": "Shane Lowry",
+        "world_rank": 14,
+        "odds_position": 14,
+        "odds": "+5000",
+        "value_score": 1.0,
+        "course_fit": 4,
         "form": 3,
         "injury_penalty": 0,
-        "composite": 10.17,
-        "notes": "Length + experience in Majors. Good closer when he gets into contention. Outside contender."
+        "composite": 10.0,
+        "notes": "2019 Open Champion. Elite iron play, great in tough conditions. Aronimink's classic feel suits him."
       },
       {
         "rank": 12,
-        "name": "Robert MacIntyre",
-        "world_rank": 22,
-        "odds_position": 16,
-        "odds": "+5500",
-        "value_score": 1.375,
+        "name": "Sepp Straka",
+        "world_rank": 13,
+        "odds_position": 13,
+        "odds": "+4500",
+        "value_score": 1.0,
         "course_fit": 3,
-        "form": 3,
+        "form": 4,
         "injury_penalty": 0,
-        "composite": 10.13,
-        "notes": "Lefty with proven Major-week game. Steady ball-striker \u2014 fair price."
+        "composite": 10.0,
+        "notes": "Quietly excellent year. Solid ball-striker. Cut-maker \u2014 minimum baseline of competing into the weekend."
       },
       {
         "rank": 13,
-        "name": "Sam Burns",
-        "world_rank": 13,
-        "odds_position": 11,
-        "odds": "+3500",
-        "value_score": 1.18,
-        "course_fit": 3,
-        "form": 3,
-        "injury_penalty": 0,
-        "composite": 9.55,
-        "notes": "Solid floor, low ceiling at Majors so far. Decent value at +3500."
-      },
-      {
-        "rank": 14,
-        "name": "Adam Scott",
+        "name": "Wyndham Clark",
         "world_rank": 20,
         "odds_position": 17,
         "odds": "+6500",
@@ -643,36 +632,40 @@
         "form": 3,
         "injury_penalty": 0,
         "composite": 9.53,
-        "notes": "Past Major champ (2013 Masters). Veteran swing holds up at testing setups."
+        "notes": "2023 US Open winner \u2014 knows major pressure. Length helps at Aronimink. Boom-or-bust ceiling."
+      },
+      {
+        "rank": 14,
+        "name": "Joaquin Niemann",
+        "world_rank": 9,
+        "odds_position": 10,
+        "odds": "+3500",
+        "value_score": 0.9,
+        "course_fit": 3,
+        "form": 4,
+        "injury_penalty": 0,
+        "composite": 9.7,
+        "notes": "LIV's hottest player. Multiple LIV wins in 2026. Major performance has lagged behind PGA Tour form \u2014 watchful."
       },
       {
         "rank": 15,
-        "name": "Justin Rose",
-        "world_rank": 5,
-        "odds_position": 10,
-        "odds": "+3000",
-        "value_score": 0.5,
-        "course_fit": 4,
-        "form": 4,
+        "name": "Bryson DeChambeau",
+        "world_rank": 8,
+        "odds_position": 6,
+        "odds": "+1800",
+        "value_score": 1.33,
+        "course_fit": 3,
+        "form": 2,
         "injury_penalty": 0,
-        "composite": 9.5,
-        "notes": "OWGR #5 but market is undervaluing him. 1x Major Champ (2013 U.S. Open). Veteran Major closer if he's in contention Sunday."
+        "composite": 9.0,
+        "notes": "Missed cut at Masters \u2014 looking to right the ship. 2024 US Open winner so major pedigree is there. Aronimink length plays to power game, but form is the concern."
       }
     ],
-    "save_for_later": [
-      {
-        "name": "Ludvig Aberg",
-        "reason": "If you want to save Scheffler for U.S. Open in 5 weeks (Shinnecock Hills suits Scheffler too), Aberg is the elite-tier alternative for PGA. But the recommendation is USE SCHEFFLER HERE \u2014 Aronimink is his defending venue tier event."
-      },
-      {
-        "name": "Cameron Young",
-        "reason": "Hot form pick but consider saving for The Memorial (May 28, $20M Signature, 2.5 weeks away) where he has stronger course history at Muirfield Village."
-      }
-    ],
+    "save_for_later": [],
     "injury_watch": [
       {
-        "name": "Matt Fitzpatrick",
-        "concern": "Forced into a swing/equipment change shortly before the PGA per recent reports \u2014 but Fitzpatrick is already used (Arnold Palmer Invitational) so not actionable for this week."
+        "name": "Phil Mickelson",
+        "concern": "WD from event (personal/family health matter) \u2014 not in top 40 anyway, FYI only"
       }
     ],
     "upcoming_tier1": [
@@ -703,13 +696,6 @@
         "purse": 20000000,
         "type": "FedEx",
         "weeks_away": 13
-      },
-      {
-        "name": "BMW Championship",
-        "month": "Aug/Sep 2026",
-        "purse": 20000000,
-        "type": "FedEx",
-        "weeks_away": 14
       }
     ]
   }
