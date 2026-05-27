@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-20",
+  "last_updated": "2026-05-27",
   "season": {
     "pool_name": "CRUS11TOUR",
     "total_events": 30,
@@ -95,6 +95,12 @@
       "tournament": "PGA Championship",
       "result": "T26",
       "earnings": 125523
+    },
+    {
+      "name": "Ryo Hisatsune",
+      "tournament": "The CJ Cup Byron Nelson",
+      "result": "T19",
+      "earnings": 100597
     }
   ],
   "schedule": [
@@ -285,10 +291,10 @@
       "purse": 8700000,
       "tier": 3,
       "type": "Standard",
-      "status": "upcoming",
-      "pick": null,
-      "result": null,
-      "earnings": 0
+      "status": "done",
+      "pick": "Ryo Hisatsune",
+      "result": "T19",
+      "earnings": 100597
     },
     {
       "num": 17,
@@ -460,227 +466,243 @@
     }
   ],
   "this_week": {
-    "generated_at": "2026-05-20 15:08",
+    "generated_at": "2026-05-27 23:30",
     "tournament": {
-      "name": "The CJ Cup Byron Nelson",
-      "purse": 10300000,
+      "name": "Charles Schwab Challenge",
+      "purse": 9900000,
       "tier": 3,
       "type": "Standard",
       "month": "May 2026"
     },
-    "players_used": 15,
-    "players_available": 25,
+    "players_used": 16,
+    "players_available": 24,
     "recommendations": [
       {
-        "name": "Ryo Hisatsune",
-        "world_rank": 50,
+        "rank": 1,
+        "name": "Ben Griffin",
+        "world_rank": 25,
         "odds_position": 3,
-        "odds": "+3500",
-        "value_score": 16.67,
-        "course_fit": 3,
-        "form": 3,
-        "injury_penalty": 0,
-        "composite": 56.01,
-        "notes": "Long Japanese hitter priced as 3rd favorite \u2014 implies market sees a course fit. Decent ball-striking but unproven Sunday closer.",
-        "rank": 1
-      },
-      {
-        "name": "Brooks Koepka",
-        "world_rank": 28,
-        "odds_position": 2,
-        "odds": "+2500",
-        "value_score": 14.0,
-        "course_fit": 3,
-        "form": 2,
-        "injury_penalty": 0,
-        "composite": 47.0,
-        "notes": "Second favorite by odds despite middling form \u2014 cold putter at PGA Championship (149th SG putting this season, +3 finish). Course history is limited. High composite is a quirk of the value formula; manage risk.",
-        "rank": 2
-      },
-      {
-        "name": "Taylor Pendrith",
-        "world_rank": 35,
-        "odds_position": 4,
-        "odds": "+4000",
-        "value_score": 8.75,
+        "odds": "+2200",
+        "value_score": 8.33,
         "course_fit": 5,
         "form": 3,
         "injury_penalty": 0,
-        "composite": 34.25,
-        "notes": "PRIMARY RECOMMENDATION: 2024 CJ Cup Byron Nelson winner at TPC Craig Ranch. Best course fit in the field. Solid SG Putting (41st on Tour). Made cut at PGA.",
-        "rank": 3
+        "composite": 33.0,
+        "notes": "PRIMARY PICK: Defending Colonial champion (won 2025 by 1 stroke over Schmid). Trying to become first repeat winner since Ben Hogan in the 1950s. Best course fit available."
       },
       {
-        "name": "Michael Thorbjornsen",
-        "world_rank": 50,
-        "odds_position": 6,
-        "odds": "+4000",
-        "value_score": 8.33,
+        "rank": 2,
+        "name": "Justin Thomas",
+        "world_rank": 22,
+        "odds_position": 2,
+        "odds": "+2000",
+        "value_score": 11.0,
         "course_fit": 3,
         "form": 3,
         "injury_penalty": 0,
-        "composite": 30.99,
-        "notes": "Talented young American \u2014 bombs it off the tee, fits the renovated course's added length. Inconsistent form keeps him from being top pick.",
-        "rank": 4
+        "composite": 39.0,
+        "notes": "Highest raw composite \u2014 strong value. BUT consider saving for Memorial (Muirfield Village specialist) just 1 week away \u2014 bigger purse, deeper field."
       },
       {
-        "name": "Pierceson Coody",
-        "world_rank": 50,
-        "odds_position": 7,
-        "odds": "+4000",
-        "value_score": 7.14,
-        "course_fit": 3,
-        "form": 3,
-        "injury_penalty": 0,
-        "composite": 27.42,
-        "notes": "Texas native (Plano-area, comfortable in the McKinney heat). Length off the tee suits the new layout.",
-        "rank": 5
-      },
-      {
-        "name": "Keith Mitchell",
-        "world_rank": 50,
-        "odds_position": 8,
-        "odds": "+4500",
-        "value_score": 6.25,
+        "rank": 3,
+        "name": "Rickie Fowler",
+        "world_rank": 35,
+        "odds_position": 5,
+        "odds": "+2700",
+        "value_score": 7.0,
         "course_fit": 4,
         "form": 3,
         "injury_penalty": 0,
-        "composite": 25.75,
-        "notes": "Big-hitter Texan, plays this course well. Two top-20s here in recent years. Solid sleeper at +4500.",
-        "rank": 6
+        "composite": 28.0,
+        "notes": "Strong Colonial history with multiple top-25 finishes. Golf Digest expert pick this week. Solid second-shot specialist suits Hogan's course."
       },
       {
-        "name": "Davis Thompson",
-        "world_rank": 30,
-        "odds_position": 5,
+        "rank": 4,
+        "name": "Robert MacIntyre",
+        "world_rank": 20,
+        "odds_position": 3,
+        "odds": "+2200",
+        "value_score": 6.67,
+        "course_fit": 3,
+        "form": 4,
+        "injury_penalty": 0,
+        "composite": 27.0,
+        "notes": "Top-tier iron play suits Colonial's second-shot demands. Quietly consistent in 2026 \u2014 good combo of price and form."
+      },
+      {
+        "rank": 5,
+        "name": "Gary Woodland",
+        "world_rank": 65,
+        "odds_position": 11,
         "odds": "+4000",
-        "value_score": 6.0,
+        "value_score": 5.91,
         "course_fit": 3,
         "form": 3,
         "injury_penalty": 0,
-        "composite": 24.0,
-        "notes": "Steady ball-striker, won at Detroit two years ago, fits a birdiefest course. Reasonable value play.",
-        "rank": 7
+        "composite": 23.73,
+        "notes": "Past U.S. Open champ rebuilding form. Composite high because the formula rewards ranking/odds divergence \u2014 treat as upside play, not headliner."
       },
       {
-        "name": "Michael Brennan",
-        "world_rank": 80,
-        "odds_position": 14,
-        "odds": "+6000",
-        "value_score": 5.71,
-        "course_fit": 2,
+        "rank": 6,
+        "name": "Pierceson Coody",
+        "world_rank": 55,
+        "odds_position": 10,
+        "odds": "+4000",
+        "value_score": 5.5,
+        "course_fit": 3,
         "form": 4,
         "injury_penalty": 0,
-        "composite": 23.13,
-        "notes": "Rookie of the Year candidate riding hot recent form. Unproven at this caliber but coming in confident.",
-        "rank": 8
+        "composite": 23.5,
+        "notes": "Coming off T19 at CJ Cup Byron Nelson \u2014 momentum carrying into Texas Swing. Local Texan comfort at Colonial."
       },
       {
-        "name": "Wyndham Clark",
-        "world_rank": 55,
-        "odds_position": 11,
-        "odds": "+5000",
+        "rank": 7,
+        "name": "Ludvig Aberg",
+        "world_rank": 5,
+        "odds_position": 1,
+        "odds": "+850",
         "value_score": 5.0,
         "course_fit": 3,
-        "form": 2,
+        "form": 4,
         "injury_penalty": 0,
-        "composite": 20.0,
-        "notes": "Former US Open champion working back to form (OWGR dropped from #10 to #78). Missed cut at PGA. Upside but volatile.",
-        "rank": 9
+        "composite": 22.0,
+        "notes": "SAVE FOR LATER \u2014 clear betting favorite. Memorial ($20M Signature) is 1 week away, US Open ($21.5M Major) is 3 weeks away. Do not burn on a Tier 3 standard."
       },
       {
-        "name": "Austin Eckroat",
-        "world_rank": 35,
-        "odds_position": 9,
-        "odds": "+4500",
-        "value_score": 3.89,
+        "rank": 8,
+        "name": "Keith Mitchell",
+        "world_rank": 40,
+        "odds_position": 8,
+        "odds": "+3500",
+        "value_score": 5.0,
+        "course_fit": 3,
+        "form": 3,
+        "injury_penalty": 0,
+        "composite": 21.0,
+        "notes": "Solid mid-tier ball striker. Made cut at PGA Championship \u2014 quiet but reliable floor."
+      },
+      {
+        "rank": 9,
+        "name": "Sam Burns",
+        "world_rank": 28,
+        "odds_position": 7,
+        "odds": "+3000",
+        "value_score": 4.0,
+        "course_fit": 5,
+        "form": 3,
+        "injury_penalty": 0,
+        "composite": 20.0,
+        "notes": "2022 Colonial winner \u2014 proven course fit (5/5). Form is OK not hot. Reasonable contrarian to Aberg/Thomas if course history is the thesis."
+      },
+      {
+        "rank": 10,
+        "name": "Akshay Bhatia",
+        "world_rank": 30,
+        "odds_position": 7,
+        "odds": "+3300",
+        "value_score": 4.29,
         "course_fit": 3,
         "form": 4,
         "injury_penalty": 0,
-        "composite": 18.67,
-        "notes": "Multiple wins in past 18 months, strong recent SG numbers. Reliable mid-tier choice if you want to play it safe.",
-        "rank": 10
+        "composite": 19.87,
+        "notes": "Won Arnold Palmer Invitational in March 2026. CBS Sports model favorite. Cooled (T37 Truist, T83 PGA) but still upside in a soft field."
       },
       {
-        "name": "Eric Cole",
+        "rank": 11,
+        "name": "Michael Thorbjornsen",
         "world_rank": 50,
-        "odds_position": 13,
-        "odds": "+5500",
-        "value_score": 3.85,
+        "odds_position": 14,
+        "odds": "+4500",
+        "value_score": 3.57,
         "course_fit": 3,
         "form": 3,
         "injury_penalty": 0,
-        "composite": 17.55,
-        "notes": "Steady veteran with solid SG approach numbers. Made the PGA Championship cut.",
-        "rank": 11
+        "composite": 16.71,
+        "notes": "Young American with length and upside. Inconsistent but priced reasonably for a stab at top-10 equity."
       },
       {
-        "name": "Rasmus Hojgaard",
-        "world_rank": 32,
-        "odds_position": 10,
-        "odds": "+5000",
-        "value_score": 3.2,
-        "course_fit": 3,
-        "form": 3,
-        "injury_penalty": 0,
-        "composite": 15.6,
-        "notes": "Twin of already-used Nicolai. Talented Danish ball-striker, recent T20s. Decent value at +5000.",
-        "rank": 12
-      },
-      {
-        "name": "Tom Kim",
-        "world_rank": 30,
-        "odds_position": 12,
+        "rank": 12,
+        "name": "Sahith Theegala",
+        "world_rank": 45,
+        "odds_position": 18,
         "odds": "+5500",
         "value_score": 2.5,
         "course_fit": 3,
         "form": 3,
         "injury_penalty": 0,
         "composite": 13.5,
-        "notes": "Solid Korean star, multiple PGA wins. Decent SG approach. Reasonable middle-of-board play.",
-        "rank": 13
+        "notes": "Quietly working back into form. Capable of a sneaky top-10 here."
       },
       {
-        "name": "Christiaan Bezuidenhout",
-        "world_rank": 38,
-        "odds_position": 16,
-        "odds": "+6500",
-        "value_score": 2.38,
-        "course_fit": 3,
-        "form": 3,
-        "injury_penalty": 0,
-        "composite": 13.14,
-        "notes": "Elite putter (top-20 SG Putting). Could thrive on the firmer post-renovation greens. Value at +6500.",
-        "rank": 14
-      },
-      {
+        "rank": 13,
         "name": "Sungjae Im",
         "world_rank": 25,
-        "odds_position": 15,
-        "odds": "+6000",
-        "value_score": 1.67,
+        "odds_position": 13,
+        "odds": "+4500",
+        "value_score": 1.92,
         "course_fit": 4,
         "form": 3,
         "injury_penalty": 0,
-        "composite": 12.01,
-        "notes": "Quiet but consistent \u2014 4 PGA wins, frequent top-20s. Best DG-ranked player available aside from Scheffler. Strong value at +6000.",
-        "rank": 15
+        "composite": 12.77,
+        "notes": "Made-cut machine with multiple top-25s at Colonial. Floor pick more than ceiling \u2014 safer if you want to survive vs. win."
+      },
+      {
+        "rank": 14,
+        "name": "Aaron Rai",
+        "world_rank": 15,
+        "odds_position": 8,
+        "odds": "+3500",
+        "value_score": 1.88,
+        "course_fit": 3,
+        "form": 3,
+        "injury_penalty": 0,
+        "composite": 11.63,
+        "notes": "Recent Open champ rising on OWGR. Steady iron play suits Colonial; lower variance than the bombers."
+      },
+      {
+        "rank": 15,
+        "name": "JJ Spaun",
+        "world_rank": 8,
+        "odds_position": 6,
+        "odds": "+3000",
+        "value_score": 1.33,
+        "course_fit": 3,
+        "form": 4,
+        "injury_penalty": 0,
+        "composite": 11.0,
+        "notes": "SAVE FOR LATER \u2014 top-10 OWGR talent better leveraged at Memorial or US Open (Major, 3 weeks)."
       }
     ],
     "save_for_later": [
       {
-        "name": "Scottie Scheffler",
-        "reason": "U.S. Open in ~4 weeks ($21.5M Major) \u2014 Scheffler is the most valuable asset left in the pool. Skip the Tier 3 burn here; save him for the Major where he's the heavy favorite at Shinnecock."
+        "name": "Ludvig Aberg",
+        "reason": "Memorial Tournament (Signature, $20M) in 1 week; U.S. Open (Major, $21.5M) in 3 weeks. He's the clear betting favorite this week \u2014 much better burn at a Tier 1."
+      },
+      {
+        "name": "Justin Thomas",
+        "reason": "Memorial Tournament (Signature, $20M) in 1 week. JT thrives at Muirfield Village (better historical fit than Colonial)."
+      },
+      {
+        "name": "JJ Spaun",
+        "reason": "Top-10 OWGR talent better used at U.S. Open (Major, $21.5M) in 3 weeks where his ball-striking shines on a tougher setup."
+      },
+      {
+        "name": "Tommy Fleetwood",
+        "reason": "Open Championship ($17M Major) in 7 weeks \u2014 Fleetwood's strongest course-fit window comes on links golf."
       }
     ],
     "injury_watch": [
       {
-        "name": "Aaron Rai (PGA Champ)",
-        "concern": "Withdrew from CJ Cup \u2014 exhausted after major win. Not an available pick anyway, but flagged. Replaced by S.Y. Noh."
+        "name": "Brooks Koepka",
+        "concern": "Withdrew from Charles Schwab Challenge for scheduled rest after T14 at CJ Cup Byron Nelson. Not in field \u2014 not pickable this week."
+      },
+      {
+        "name": "Wyndham Clark",
+        "concern": "Withdrew less than 24 hours after winning CJ Cup Byron Nelson. Not in field this week \u2014 monitor for Memorial status."
       },
       {
         "name": "Scottie Scheffler",
-        "concern": "Putting concerns \u2014 lost 2.2 strokes on greens Saturday at PGA, finished 73rd of 82 in SG Putting. Healthy, but ball-striking carrying him."
+        "concern": "Healthy but elected not to enter Charles Schwab Challenge. Will return as defending champ at Memorial."
       }
     ],
     "upcoming_tier1": [
@@ -689,25 +711,32 @@
         "month": "Jun 2026",
         "purse": 20000000,
         "type": "Signature",
-        "weeks_away": 2
+        "weeks_away": 1
       },
       {
         "name": "U.S. Open",
         "month": "Jun 2026",
         "purse": 21500000,
         "type": "Major",
-        "weeks_away": 4
+        "weeks_away": 3
       },
       {
         "name": "The Open Championship",
         "month": "Jul 2026",
         "purse": 17000000,
         "type": "Major",
-        "weeks_away": 8
+        "weeks_away": 7
       },
       {
         "name": "FedEx St. Jude Championship",
         "month": "Aug 2026",
+        "purse": 20000000,
+        "type": "FedEx",
+        "weeks_away": 11
+      },
+      {
+        "name": "BMW Championship",
+        "month": "Aug/Sep 2026",
         "purse": 20000000,
         "type": "FedEx",
         "weeks_away": 12
