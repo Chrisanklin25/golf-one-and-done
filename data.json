@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-27",
+  "last_updated": "2026-06-02",
   "season": {
     "pool_name": "CRUS11TOUR",
     "total_events": 30,
@@ -101,6 +101,12 @@
       "tournament": "The CJ Cup Byron Nelson",
       "result": "T19",
       "earnings": 100597
+    },
+    {
+      "name": "Justin Thomas",
+      "tournament": "Charles Schwab Challenge",
+      "result": "T13",
+      "earnings": 193875
     }
   ],
   "schedule": [
@@ -303,10 +309,10 @@
       "purse": 8700000,
       "tier": 3,
       "type": "Standard",
-      "status": "upcoming",
-      "pick": null,
-      "result": null,
-      "earnings": 0
+      "status": "done",
+      "pick": "Justin Thomas",
+      "result": "T13",
+      "earnings": 193875
     },
     {
       "num": 18,
@@ -466,258 +472,206 @@
     }
   ],
   "this_week": {
-    "generated_at": "2026-05-27 23:30",
+    "generated_at": "2026-06-02 02:01",
+    "methodology_version": "v2 \u2014 differential climb model",
     "tournament": {
-      "name": "Charles Schwab Challenge",
-      "purse": 9900000,
-      "tier": 3,
-      "type": "Standard",
-      "month": "May 2026"
+      "name": "The Memorial Tournament",
+      "purse": 20000000,
+      "tier": 1,
+      "type": "Signature",
+      "month": "Jun 2026",
+      "course": "Muirfield Village, Dublin OH",
+      "defending_champion": "Scottie Scheffler (going for three-peat)"
     },
-    "players_used": 16,
-    "players_available": 24,
+    "pool_context": {
+      "your_rank": "10th of 10 active",
+      "your_earnings": 3084529,
+      "gap_to_3rd_cash_line": 6702669,
+      "leader_earnings": 12679276,
+      "prize_payouts": {
+        "1st": 866.25,
+        "2nd": 247.5,
+        "3rd": 123.75
+      },
+      "strategic_note": "Top 2 is the only meaningful target. 3rd ($123.75) barely covers $125 entry. Math demands differential picks at high-leverage events."
+    },
+    "players_used": 17,
+    "players_available": 23,
     "recommendations": [
       {
         "rank": 1,
-        "name": "Ben Griffin",
-        "world_rank": 25,
-        "odds_position": 3,
-        "odds": "+2200",
-        "value_score": 8.33,
-        "course_fit": 5,
-        "form": 3,
+        "name": "Ludvig Aberg",
+        "world_rank": 5,
+        "odds": "+1500 (est.)",
+        "implied_win_pct": 6.25,
+        "pool_ownership_pct": 78,
+        "pool_available_to": "2 of 9 known entries (Christopher + i_was_inverted)",
+        "expected_winner_share": 4000000,
+        "ev_solo_win": 250000,
+        "climb_if_wins": "6-8 spots (essentially leapfrog to top 3)",
+        "expected_climb": 0.4,
+        "course_fit": 4,
+        "form": 4,
         "injury_penalty": 0,
-        "composite": 33.0,
-        "notes": "PRIMARY PICK: Defending Colonial champion (won 2025 by 1 stroke over Schmid). Trying to become first repeat winner since Ben Hogan in the 1950s. Best course fit available."
+        "composite": 9.5,
+        "notes": "PRIMARY PICK \u2014 MAXIMUM DIFFERENTIAL ELITE. Seven of nine entries already burned Aberg at PGA Championship or Masters. You uniquely held him. Long ball-striker, perfect Muirfield Village fit. Coming off T17 at CSC, healthy. If he wins, you essentially leapfrog the pool; if he top-5s, you close significant ground. The math: 6% win prob \u00d7 6-8 spot climb = far better than Scheffler's 25% \u00d7 0-1 spot shared climb."
       },
       {
         "rank": 2,
-        "name": "Justin Thomas",
-        "world_rank": 22,
-        "odds_position": 2,
-        "odds": "+2000",
-        "value_score": 11.0,
-        "course_fit": 3,
-        "form": 3,
+        "name": "Scottie Scheffler",
+        "world_rank": 1,
+        "odds": "+300",
+        "implied_win_pct": 25.0,
+        "pool_ownership_pct": 22,
+        "pool_available_to": "7 of 9 known entries \u2014 HIGH CHALK",
+        "expected_winner_share": 4000000,
+        "ev_solo_win": 1000000,
+        "climb_if_wins": "0-1 spots \u2014 6 others have him too",
+        "expected_climb": 0.1,
+        "course_fit": 5,
+        "form": 5,
         "injury_penalty": 0,
-        "composite": 39.0,
-        "notes": "Highest raw composite \u2014 strong value. BUT consider saving for Memorial (Muirfield Village specialist) just 1 week away \u2014 bigger purse, deeper field."
+        "composite": 7.0,
+        "notes": "Two-time defending champ going for the three-peat. Highest absolute EV on the board. BUT: 7 of 9 other entries still have him available. If he wins, you cash $4M but stay last among Scheffler-pickers \u2014 minimal climb. Save him for U.S. Open in 3 weeks (lower ownership there, similar win equity) OR use here if you fear someone else grabbing him at US Open."
       },
       {
         "rank": 3,
-        "name": "Rickie Fowler",
-        "world_rank": 35,
-        "odds_position": 5,
-        "odds": "+2700",
-        "value_score": 7.0,
-        "course_fit": 4,
+        "name": "Tommy Fleetwood",
+        "world_rank": 9,
+        "odds": "+2000 (est.)",
+        "implied_win_pct": 4.76,
+        "pool_ownership_pct": 22,
+        "pool_available_to": "7 of 9 known entries",
+        "expected_winner_share": 4000000,
+        "ev_solo_win": 190476,
+        "climb_if_wins": "1-3 spots \u2014 partially shared",
+        "expected_climb": 0.1,
+        "course_fit": 3,
         "form": 3,
         "injury_penalty": 0,
-        "composite": 28.0,
-        "notes": "Strong Colonial history with multiple top-25 finishes. Golf Digest expert pick this week. Solid second-shot specialist suits Hogan's course."
+        "composite": 5.5,
+        "notes": "Strong global talent but better course fit at Open Championship in 7 weeks (links specialist). Save."
       },
       {
         "rank": 4,
-        "name": "Robert MacIntyre",
-        "world_rank": 20,
-        "odds_position": 3,
-        "odds": "+2200",
-        "value_score": 6.67,
+        "name": "Ben Griffin",
+        "world_rank": 25,
+        "odds": "+3000",
+        "implied_win_pct": 3.23,
+        "pool_ownership_pct": 22,
+        "pool_available_to": "7 of 9 known entries",
+        "expected_winner_share": 4000000,
+        "ev_solo_win": 129000,
+        "climb_if_wins": "1-3 spots \u2014 partially shared",
+        "expected_climb": 0.05,
         "course_fit": 3,
-        "form": 4,
+        "form": 5,
         "injury_penalty": 0,
-        "composite": 27.0,
-        "notes": "Top-tier iron play suits Colonial's second-shot demands. Quietly consistent in 2026 \u2014 good combo of price and form."
+        "composite": 4.5,
+        "notes": "Hot off T3 at CSC. Decent EV but high ownership at Memorial \u2014 similar issue as Scheffler. Reserve for FedEx St. Jude or BMW where ownership might be lower."
       },
       {
         "rank": 5,
-        "name": "Gary Woodland",
-        "world_rank": 65,
-        "odds_position": 11,
-        "odds": "+4000",
-        "value_score": 5.91,
+        "name": "JJ Spaun",
+        "world_rank": 8,
+        "odds": "+2500 (est.)",
+        "implied_win_pct": 3.85,
+        "pool_ownership_pct": 0,
+        "pool_available_to": "9 of 9 \u2014 universally saved",
+        "expected_winner_share": 4000000,
+        "ev_solo_win": 154000,
+        "climb_if_wins": "0-1 spots \u2014 everyone has him",
+        "expected_climb": 0.02,
         "course_fit": 3,
-        "form": 3,
+        "form": 4,
         "injury_penalty": 0,
-        "composite": 23.73,
-        "notes": "Past U.S. Open champ rebuilding form. Composite high because the formula rewards ranking/odds divergence \u2014 treat as upside play, not headliner."
+        "composite": 4.0,
+        "notes": "Universal save \u2014 entire pool holding for later. Don't break ranks here. Reserve for U.S. Open."
       },
       {
         "rank": 6,
-        "name": "Pierceson Coody",
-        "world_rank": 55,
-        "odds_position": 10,
-        "odds": "+4000",
-        "value_score": 5.5,
+        "name": "Sam Burns",
+        "world_rank": 28,
+        "odds": "+4000 (est.)",
+        "implied_win_pct": 2.44,
+        "pool_ownership_pct": 0,
+        "pool_available_to": "9 of 9 \u2014 universally saved",
+        "expected_winner_share": 4000000,
+        "ev_solo_win": 97600,
+        "climb_if_wins": "0-1 spots",
+        "expected_climb": 0.02,
         "course_fit": 3,
-        "form": 4,
+        "form": 3,
         "injury_penalty": 0,
-        "composite": 23.5,
-        "notes": "Coming off T19 at CJ Cup Byron Nelson \u2014 momentum carrying into Texas Swing. Local Texan comfort at Colonial."
+        "composite": 3.5,
+        "notes": "Also universally saved. Solid floor but no differential edge."
       },
       {
         "rank": 7,
-        "name": "Ludvig Aberg",
-        "world_rank": 5,
-        "odds_position": 1,
-        "odds": "+850",
-        "value_score": 5.0,
-        "course_fit": 3,
-        "form": 4,
-        "injury_penalty": 0,
-        "composite": 22.0,
-        "notes": "SAVE FOR LATER \u2014 clear betting favorite. Memorial ($20M Signature) is 1 week away, US Open ($21.5M Major) is 3 weeks away. Do not burn on a Tier 3 standard."
-      },
-      {
-        "rank": 8,
-        "name": "Keith Mitchell",
-        "world_rank": 40,
-        "odds_position": 8,
-        "odds": "+3500",
-        "value_score": 5.0,
+        "name": "Justin Rose",
+        "world_rank": 6,
+        "odds": "+3500 (est.)",
+        "implied_win_pct": 2.78,
+        "pool_ownership_pct": 11,
+        "pool_available_to": "8 of 9",
+        "expected_winner_share": 4000000,
+        "ev_solo_win": 111000,
+        "climb_if_wins": "1-2 spots",
+        "expected_climb": 0.03,
         "course_fit": 3,
         "form": 3,
         "injury_penalty": 0,
-        "composite": 21.0,
-        "notes": "Solid mid-tier ball striker. Made cut at PGA Championship \u2014 quiet but reliable floor."
-      },
-      {
-        "rank": 9,
-        "name": "Sam Burns",
-        "world_rank": 28,
-        "odds_position": 7,
-        "odds": "+3000",
-        "value_score": 4.0,
-        "course_fit": 5,
-        "form": 3,
-        "injury_penalty": 0,
-        "composite": 20.0,
-        "notes": "2022 Colonial winner \u2014 proven course fit (5/5). Form is OK not hot. Reasonable contrarian to Aberg/Thomas if course history is the thesis."
-      },
-      {
-        "rank": 10,
-        "name": "Akshay Bhatia",
-        "world_rank": 30,
-        "odds_position": 7,
-        "odds": "+3300",
-        "value_score": 4.29,
-        "course_fit": 3,
-        "form": 4,
-        "injury_penalty": 0,
-        "composite": 19.87,
-        "notes": "Won Arnold Palmer Invitational in March 2026. CBS Sports model favorite. Cooled (T37 Truist, T83 PGA) but still upside in a soft field."
-      },
-      {
-        "rank": 11,
-        "name": "Michael Thorbjornsen",
-        "world_rank": 50,
-        "odds_position": 14,
-        "odds": "+4500",
-        "value_score": 3.57,
-        "course_fit": 3,
-        "form": 3,
-        "injury_penalty": 0,
-        "composite": 16.71,
-        "notes": "Young American with length and upside. Inconsistent but priced reasonably for a stab at top-10 equity."
-      },
-      {
-        "rank": 12,
-        "name": "Sahith Theegala",
-        "world_rank": 45,
-        "odds_position": 18,
-        "odds": "+5500",
-        "value_score": 2.5,
-        "course_fit": 3,
-        "form": 3,
-        "injury_penalty": 0,
-        "composite": 13.5,
-        "notes": "Quietly working back into form. Capable of a sneaky top-10 here."
-      },
-      {
-        "rank": 13,
-        "name": "Sungjae Im",
-        "world_rank": 25,
-        "odds_position": 13,
-        "odds": "+4500",
-        "value_score": 1.92,
-        "course_fit": 4,
-        "form": 3,
-        "injury_penalty": 0,
-        "composite": 12.77,
-        "notes": "Made-cut machine with multiple top-25s at Colonial. Floor pick more than ceiling \u2014 safer if you want to survive vs. win."
-      },
-      {
-        "rank": 14,
-        "name": "Aaron Rai",
-        "world_rank": 15,
-        "odds_position": 8,
-        "odds": "+3500",
-        "value_score": 1.88,
-        "course_fit": 3,
-        "form": 3,
-        "injury_penalty": 0,
-        "composite": 11.63,
-        "notes": "Recent Open champ rising on OWGR. Steady iron play suits Colonial; lower variance than the bombers."
-      },
-      {
-        "rank": 15,
-        "name": "JJ Spaun",
-        "world_rank": 8,
-        "odds_position": 6,
-        "odds": "+3000",
-        "value_score": 1.33,
-        "course_fit": 3,
-        "form": 4,
-        "injury_penalty": 0,
-        "composite": 11.0,
-        "notes": "SAVE FOR LATER \u2014 top-10 OWGR talent better leveraged at Memorial or US Open (Major, 3 weeks)."
+        "composite": 3.5,
+        "notes": "Better used at RBC Canadian Open or US Open (his historical strength)."
       }
     ],
+    "primary_recommendation": "Ludvig Aberg",
+    "primary_reason": "Differential climb model: 6% \u00d7 6-8 spot climb dominates Scheffler's 25% \u00d7 0-1 spot shared climb. The pool burned Aberg at PGA/Masters; you uniquely held him for exactly this moment.",
     "save_for_later": [
       {
-        "name": "Ludvig Aberg",
-        "reason": "Memorial Tournament (Signature, $20M) in 1 week; U.S. Open (Major, $21.5M) in 3 weeks. He's the clear betting favorite this week \u2014 much better burn at a Tier 1."
-      },
-      {
-        "name": "Justin Thomas",
-        "reason": "Memorial Tournament (Signature, $20M) in 1 week. JT thrives at Muirfield Village (better historical fit than Colonial)."
-      },
-      {
-        "name": "JJ Spaun",
-        "reason": "Top-10 OWGR talent better used at U.S. Open (Major, $21.5M) in 3 weeks where his ball-striking shines on a tougher setup."
+        "name": "Scottie Scheffler",
+        "reserve_for": "U.S. Open (3 weeks)",
+        "reason": "Lower pool ownership at Shinnecock; similar win equity (~22%) with cleaner climb math."
       },
       {
         "name": "Tommy Fleetwood",
-        "reason": "Open Championship ($17M Major) in 7 weeks \u2014 Fleetwood's strongest course-fit window comes on links golf."
+        "reserve_for": "Open Championship (7 weeks)",
+        "reason": "Top global links specialist \u2014 best course-fit week of his year."
+      },
+      {
+        "name": "JJ Spaun",
+        "reserve_for": "FedEx St. Jude or BMW (11-12 weeks)",
+        "reason": "Universally saved by pool. Wait until lower ownership window."
+      },
+      {
+        "name": "Robert MacIntyre",
+        "reserve_for": "Genesis Scottish Open (6 weeks)",
+        "reason": "Home tournament for the Scot \u2014 differential play at his strongest week."
       }
     ],
     "injury_watch": [
       {
         "name": "Brooks Koepka",
-        "concern": "Withdrew from Charles Schwab Challenge for scheduled rest after T14 at CJ Cup Byron Nelson. Not in field \u2014 not pickable this week."
+        "concern": "Withdrew from CSC. Not in Memorial field. Monitor for US Open status."
       },
       {
         "name": "Wyndham Clark",
-        "concern": "Withdrew less than 24 hours after winning CJ Cup Byron Nelson. Not in field this week \u2014 monitor for Memorial status."
-      },
-      {
-        "name": "Scottie Scheffler",
-        "concern": "Healthy but elected not to enter Charles Schwab Challenge. Will return as defending champ at Memorial."
+        "concern": "Withdrew from CSC after Byron Nelson win. Status TBD for Memorial."
       }
     ],
     "upcoming_tier1": [
-      {
-        "name": "The Memorial Tournament",
-        "month": "Jun 2026",
-        "purse": 20000000,
-        "type": "Signature",
-        "weeks_away": 1
-      },
       {
         "name": "U.S. Open",
         "month": "Jun 2026",
         "purse": 21500000,
         "type": "Major",
+        "weeks_away": 2
+      },
+      {
+        "name": "Travelers Championship",
+        "month": "Jun 2026",
+        "purse": 8000000,
+        "type": "Standard",
         "weeks_away": 3
       },
       {
@@ -725,22 +679,134 @@
         "month": "Jul 2026",
         "purse": 17000000,
         "type": "Major",
-        "weeks_away": 7
+        "weeks_away": 6
       },
       {
         "name": "FedEx St. Jude Championship",
         "month": "Aug 2026",
         "purse": 20000000,
         "type": "FedEx",
-        "weeks_away": 11
+        "weeks_away": 10
       },
       {
         "name": "BMW Championship",
-        "month": "Aug/Sep 2026",
+        "month": "Aug 2026",
         "purse": 20000000,
         "type": "FedEx",
-        "weeks_away": 12
+        "weeks_away": 11
       }
+    ]
+  },
+  "season_pick_plan": {
+    "generated_at": "2026-06-02 02:01",
+    "methodology": "Reverse-allocate available players to remaining events, prioritizing differential edge at Tier 1 events and high-ceiling shots at Tier 3 events.",
+    "philosophy": "From 10th place, winners-only math applies. Each Tier 1 event = one chance to leap. Each Tier 3 event = optional gambit for an outright winner.",
+    "plan": [
+      {
+        "event": "The Memorial Tournament",
+        "week_of": "Jun 4",
+        "tier": 1,
+        "pick": "Ludvig Aberg",
+        "rationale": "Differential elite (78% pool ownership \u2014 uniquely available to you)."
+      },
+      {
+        "event": "RBC Canadian Open",
+        "week_of": "Jun 11",
+        "tier": 3,
+        "pick": "Justin Rose",
+        "rationale": "Mid-elite swing; Rose's game travels north."
+      },
+      {
+        "event": "U.S. Open",
+        "week_of": "Jun 18",
+        "tier": 1,
+        "pick": "Scottie Scheffler",
+        "rationale": "Deploy the queen at the Major. ~22% favorite, defending champ's #1 player. Even if shared, top 2 climb."
+      },
+      {
+        "event": "Travelers Championship",
+        "week_of": "Jun 25",
+        "tier": 2,
+        "pick": "Robert MacIntyre",
+        "rationale": "Underowned mid-tier, hot form swing."
+      },
+      {
+        "event": "John Deere Classic",
+        "week_of": "Jul 2",
+        "tier": 3,
+        "pick": "Sahith Theegala",
+        "rationale": "Mid-tier gambit at a smaller event."
+      },
+      {
+        "event": "Genesis Scottish Open",
+        "week_of": "Jul 9",
+        "tier": 2,
+        "pick": "Aaron Rai",
+        "rationale": "Recent Open champ at links tune-up \u2014 strong fit."
+      },
+      {
+        "event": "The Open Championship",
+        "week_of": "Jul 16",
+        "tier": 1,
+        "pick": "Tommy Fleetwood",
+        "rationale": "Best links course-fit on roster. Major upside."
+      },
+      {
+        "event": "3M Open",
+        "week_of": "Jul 23",
+        "tier": 3,
+        "pick": "Akshay Bhatia",
+        "rationale": "API winner, takes shots at TPC Twin Cities."
+      },
+      {
+        "event": "Rocket Classic",
+        "week_of": "Jul 30",
+        "tier": 3,
+        "pick": "Keegan Bradley",
+        "rationale": "Course history at Detroit GC."
+      },
+      {
+        "event": "Wyndham Championship",
+        "week_of": "Aug 6",
+        "tier": 3,
+        "pick": "Sungjae Im",
+        "rationale": "Sedgefield specialist, consistent floor."
+      },
+      {
+        "event": "FedEx St. Jude Championship",
+        "week_of": "Aug 13",
+        "tier": 1,
+        "pick": "JJ Spaun",
+        "rationale": "Universally saved \u2014 but here, Spaun's pre-playoffs ceiling justifies it."
+      },
+      {
+        "event": "BMW Championship",
+        "week_of": "Aug 20",
+        "tier": 1,
+        "pick": "Sam Burns",
+        "rationale": "Power game + scoring conditions at Caves Valley."
+      },
+      {
+        "event": "Tour Championship",
+        "week_of": "Aug 27",
+        "tier": 1,
+        "pick": "Ben Griffin",
+        "rationale": "Only if he qualifies (top 30 FedEx). Backup: best available."
+      }
+    ],
+    "flex_picks_for_swaps": [
+      "Michael Thorbjornsen",
+      "Sahith Theegala",
+      "Pierceson Coody",
+      "Robert Streb",
+      "Mackenzie Hughes",
+      "Davis Thompson",
+      "Eric Cole"
+    ],
+    "key_risks": [
+      "If Scheffler is picked by Christopher's competitors at Memorial first and earns big, the US Open Scheffler play becomes contested.",
+      "If Aberg also gets picked by someone (likely i_was_inverted), Christopher loses sole-differential edge.",
+      "Open Championship field is unconfirmed for some LIV players; Fleetwood pivot may shift."
     ]
   }
 }
