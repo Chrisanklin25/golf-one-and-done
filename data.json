@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-17 22:12",
+  "last_updated": "2026-06-17 22:21",
   "season": {
     "pool_name": "CRUS11TOUR",
     "total_events": 30,
@@ -113,6 +113,12 @@
       "tournament": "The Memorial Tournament",
       "result": "T40",
       "earnings": 82000
+    },
+    {
+      "name": "Aaron Rai",
+      "tournament": "RBC Canadian Open",
+      "result": "CUT",
+      "earnings": 0
     }
   ],
   "schedule": [
@@ -339,9 +345,9 @@
       "purse": 8700000,
       "tier": 3,
       "type": "Standard",
-      "status": "upcoming",
-      "pick": null,
-      "result": null,
+      "status": "done",
+      "pick": "Aaron Rai",
+      "result": "CUT",
       "earnings": 0
     },
     {
@@ -493,8 +499,8 @@
       "format": "PGA Survivor (one-and-done) \u2014 earnings-based",
       "scoring": "Cumulative season earnings of picked players; each player used once."
     },
-    "players_used": 18,
-    "players_available": 22,
+    "players_used": 19,
+    "players_available": 21,
     "recommendations": [
       {
         "rank": 1,
@@ -743,11 +749,7 @@
         "type": "FedEx",
         "weeks_away": 12
       }
-    ],
-    "login_required": {
-      "flagged_at": "2026-06-17 22:12",
-      "message": "Splash Sports session expired. Last week's RBC Canadian Open pick + result could not be auto-recorded. Log back in at https://app.splashsports.com/ before next Wednesday \u2014 or tell Claude your pick + position in chat and I'll record it manually."
-    }
+    ]
   },
   "season_pick_plan": {
     "generated_at": "2026-06-02 02:01",
