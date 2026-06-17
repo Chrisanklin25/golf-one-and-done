@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-10 18:05",
+  "last_updated": "2026-06-17 22:12",
   "season": {
     "pool_name": "CRUS11TOUR",
     "total_events": 30,
@@ -478,13 +478,13 @@
     }
   ],
   "this_week": {
-    "generated_at": "2026-06-10 18:05",
+    "generated_at": "2026-06-17 22:12",
     "methodology_version": "v2",
     "tournament": {
-      "name": "RBC Canadian Open",
-      "purse": 9800000,
-      "tier": 3,
-      "type": "Standard",
+      "name": "U.S. Open",
+      "purse": 21500000,
+      "tier": 1,
+      "type": "Major",
       "month": "Jun 2026"
     },
     "pool_context": {
@@ -498,256 +498,236 @@
     "recommendations": [
       {
         "rank": 1,
-        "name": "Tommy Fleetwood",
-        "world_rank": 5,
-        "dg_rank": 5,
+        "name": "Scottie Scheffler",
+        "world_rank": 1,
+        "dg_rank": 1,
         "odds_position": 1,
-        "odds": "+1200",
-        "value_score": 5.0,
-        "course_fit": 4,
+        "odds": "+550",
+        "value_score": 1.0,
+        "course_fit": 5,
         "form": 5,
         "injury_penalty": 0,
-        "composite": 24.0,
-        "notes": "Outright favorite at +1200. Coming off T4 at Memorial after sharing the first-round lead \u2014 best round he's ever shot at Muirfield. Three straight years playing this event; his consistent ball-striking profile fits the renovated TPC Toronto North layout. Top of every model this week."
+        "composite": 13.0,
+        "notes": "World #1 and chasing the career Grand Slam. Paces the field in true SG tee-to-green, Par-4 scoring, and bogey avoidance \u2014 exactly the skills Shinnecock demands. Biggest tournament outside Tour Championship; this is the spot to play your stud."
       },
       {
         "rank": 2,
-        "name": "Sam Burns",
-        "world_rank": 12,
-        "dg_rank": 12,
-        "odds_position": 3,
-        "odds": "+1500",
-        "value_score": 4.0,
+        "name": "J.J. Spaun",
+        "world_rank": 10,
+        "dg_rank": 18,
+        "odds_position": 14,
+        "odds": "+5800",
+        "value_score": 1.29,
         "course_fit": 5,
-        "form": 5,
+        "form": 3,
         "injury_penalty": 0,
-        "composite": 22.0,
-        "notes": "Lost in a four-hole playoff at the 2025 RBC Canadian Open and just posted T5 at Memorial. Ranks elite in proxy-course strokes gained. Wants this title badly \u2014 sharp form + clear motivation make him the safest premium play."
+        "composite": 11.86,
+        "notes": "Defending U.S. Open champion. Course knowledge and Major comfort. Long-shot upside as a contrarian pick if you want differentiation in pool standings."
       },
       {
         "rank": 3,
-        "name": "Wyndham Clark",
-        "world_rank": 18,
-        "dg_rank": 18,
+        "name": "Tommy Fleetwood",
+        "world_rank": 6,
+        "dg_rank": 5,
         "odds_position": 4,
-        "odds": "+2200",
-        "value_score": 4.5,
-        "course_fit": 3,
-        "form": 3,
+        "odds": "+1800",
+        "value_score": 1.25,
+        "course_fit": 4,
+        "form": 4,
         "injury_penalty": 0,
-        "composite": 19.5,
-        "notes": "R1 co-leader at Memorial but couldn't sustain it. 2023 U.S. Open champion \u2014 bigger upside saved for Shinnecock next week. Listed here for value, but see save_for_later."
+        "composite": 11.75,
+        "notes": "Elite ball-striker who lives for U.S. Opens (multiple runner-up finishes). T4 at Memorial confirms form is sharp. Strong second option behind Scheffler."
       },
       {
         "rank": 4,
-        "name": "Brooks Koepka",
-        "world_rank": 28,
-        "dg_rank": 28,
-        "odds_position": 9,
-        "odds": "+3300",
-        "value_score": 3.11,
-        "course_fit": 3,
+        "name": "Wyndham Clark",
+        "world_rank": 12,
+        "dg_rank": 19,
+        "odds_position": 13,
+        "odds": "+5000",
+        "value_score": 1.46,
+        "course_fit": 4,
         "form": 3,
         "injury_penalty": 0,
-        "composite": 15.3,
-        "notes": "LIV player making a rare PGA Tour start. Four-time major champ including two U.S. Opens \u2014 also a candidate to save for Shinnecock. Use only if a Tier-3 cash floor is the priority."
+        "composite": 11.38,
+        "notes": "2023 U.S. Open champion at LACC \u2014 proven Major closer. Big game fits Shinnecock's wide corridors. Solid value at +5000."
       },
       {
         "rank": 5,
-        "name": "Robert MacIntyre",
-        "world_rank": 22,
-        "dg_rank": 22,
-        "odds_position": 8,
-        "odds": "+3000",
-        "value_score": 2.75,
+        "name": "Tyrrell Hatton",
+        "world_rank": 11,
+        "dg_rank": 12,
+        "odds_position": 11,
+        "odds": "+4400",
+        "value_score": 1.09,
         "course_fit": 4,
-        "form": 3,
+        "form": 4,
         "injury_penalty": 0,
-        "composite": 15.25,
-        "notes": "2024 RBC Canadian Open champion (at Hamilton). Form mixed but had T4 at the Players and T2 at Valero. Ball-striking profile fits TPC Toronto well per the models."
+        "composite": 11.27,
+        "notes": "Consistent Major performer; comfortable in windy, links-style conditions. Strong recent form keeps him in mix."
       },
       {
         "rank": 6,
-        "name": "Corey Conners",
-        "world_rank": 35,
-        "dg_rank": 35,
-        "odds_position": 14,
-        "odds": "+5000",
-        "value_score": 2.5,
+        "name": "Justin Rose",
+        "world_rank": 4,
+        "dg_rank": 13,
+        "odds_position": 12,
+        "odds": "+4500",
+        "value_score": 1.08,
         "course_fit": 4,
-        "form": 3,
+        "form": 4,
         "injury_penalty": 0,
-        "composite": 14.5,
-        "notes": "Canadian native with extra motivation in his national open. Elite iron play matches the demands at Osprey Valley's North. Decent dart at a longer number."
+        "composite": 11.25,
+        "notes": "2013 U.S. Open winner, evergreen Major contender. Iron play and patience fit Shinnecock's demanding approach game."
       },
       {
         "rank": 7,
-        "name": "Aaron Rai",
-        "world_rank": 12,
-        "dg_rank": 12,
-        "odds_position": 9,
-        "odds": "+3300",
-        "value_score": 1.33,
-        "course_fit": 5,
-        "form": 4,
-        "injury_penalty": 0,
-        "composite": 13.0,
-        "notes": "Reigning PGA Champion with T14/T3/T13 in his last three Canadian Open starts and #1 in SG total at proxy courses. The market continues to disrespect him \u2014 Golf Digest called it 'out of control.' Strongest pure course-fit + form combo at a fair price."
-      },
-      {
-        "rank": 8,
-        "name": "Max Homa",
-        "world_rank": 40,
-        "dg_rank": 40,
-        "odds_position": 20,
-        "odds": "+8000",
-        "value_score": 2.0,
-        "course_fit": 3,
-        "form": 3,
-        "injury_penalty": 0,
-        "composite": 12.0,
-        "notes": "Slow rebuild this season but cuts have come more consistently. Outside contention bet \u2014 only if you want to keep the elite names in reserve."
-      },
-      {
-        "rank": 9,
-        "name": "Tony Finau",
-        "world_rank": 30,
-        "dg_rank": 30,
-        "odds_position": 16,
-        "odds": "+6000",
-        "value_score": 1.88,
-        "course_fit": 3,
-        "form": 3,
-        "injury_penalty": 0,
-        "composite": 11.6,
-        "notes": "Big-hitting Finau usually plays well at less-restrictive venues. Quiet form lately but the upside remains, especially at a renovated, modern TPC track."
-      },
-      {
-        "rank": 10,
-        "name": "Shane Lowry",
-        "world_rank": 17,
-        "dg_rank": 17,
-        "odds_position": 12,
-        "odds": "+4000",
-        "value_score": 1.42,
+        "name": "Keegan Bradley",
+        "world_rank": 14,
+        "dg_rank": 26,
+        "odds_position": 22,
+        "odds": "+7500",
+        "value_score": 1.18,
         "course_fit": 4,
         "form": 3,
         "injury_penalty": 0,
-        "composite": 11.25,
-        "notes": "Veteran Irish links-style player; profile travels well to TPC Toronto. Form steady but uninspiring. Reasonable mid-tier swing."
+        "composite": 10.55,
+        "notes": "Ryder Cup captain in good form. NY native \u2014 has played Shinnecock plenty. Punchy iron game fits the venue."
       },
       {
-        "rank": 11,
-        "name": "Sungjae Im",
-        "world_rank": 25,
-        "dg_rank": 25,
-        "odds_position": 15,
-        "odds": "+5500",
-        "value_score": 1.67,
+        "rank": 8,
+        "name": "Sam Burns",
+        "world_rank": 9,
+        "dg_rank": 14,
+        "odds_position": 10,
+        "odds": "+3600",
+        "value_score": 1.4,
         "course_fit": 3,
         "form": 3,
         "injury_penalty": 0,
-        "composite": 11.0,
-        "notes": "Cuts machine \u2014 won't go missing for the weekend. Lower ceiling here, but a safe cash play if you're hunting a T15-T25 floor at low burn."
+        "composite": 10.2,
+        "notes": "Strong ball-striker with multiple PGA wins. Has the firepower to compete; course fit is the question mark."
       },
       {
-        "rank": 12,
-        "name": "Sahith Theegala",
-        "world_rank": 32,
-        "dg_rank": 32,
-        "odds_position": 18,
-        "odds": "+7000",
-        "value_score": 1.78,
-        "course_fit": 3,
-        "form": 2,
-        "injury_penalty": 0,
-        "composite": 10.3,
-        "notes": "Talent is undeniable, but form has cooled since spring. Boom-or-bust dart \u2014 better as a DFS GPP play than a survivor pick."
-      },
-      {
-        "rank": 13,
-        "name": "Justin Rose",
+        "rank": 9,
+        "name": "Bryson DeChambeau",
         "world_rank": 8,
         "dg_rank": 8,
-        "odds_position": 7,
-        "odds": "+2700",
+        "odds_position": 8,
+        "odds": "+3000",
+        "value_score": 1.0,
+        "course_fit": 4,
+        "form": 3,
+        "injury_penalty": 0,
+        "composite": 10.0,
+        "notes": "Two-time U.S. Open champion (2020, 2024). Market is fading his recent form, but Major pedigree at this event is undeniable."
+      },
+      {
+        "rank": 10,
+        "name": "Corey Conners",
+        "world_rank": 17,
+        "dg_rank": 24,
+        "odds_position": 19,
+        "odds": "+7000",
+        "value_score": 1.26,
+        "course_fit": 4,
+        "form": 2,
+        "injury_penalty": 0,
+        "composite": 9.79,
+        "notes": "Elite ball-striker / accuracy off the tee \u2014 exactly the Shinnecock profile. Putting limits the upside."
+      },
+      {
+        "rank": 11,
+        "name": "Min Woo Lee",
+        "world_rank": 15,
+        "dg_rank": 16,
+        "odds_position": 14,
+        "odds": "+5500",
         "value_score": 1.14,
         "course_fit": 3,
         "form": 3,
         "injury_penalty": 0,
-        "composite": 9.4,
-        "notes": "Top-10 talent but the floor here is no stronger than the Fleetwood/Burns floor and he's higher EV at Shinnecock. Slight save-for-later lean."
+        "composite": 9.43,
+        "notes": "Big game and rising star; first-time U.S. Open contender potential."
       },
       {
-        "rank": 14,
-        "name": "Kristoffer Reitan",
-        "world_rank": 30,
-        "dg_rank": 30,
-        "odds_position": 6,
-        "odds": "+2200",
-        "value_score": 5.0,
-        "course_fit": 2,
-        "form": 4,
-        "injury_penalty": -2,
-        "composite": 19.0,
-        "notes": "Norwegian rising star getting aggressive market love (+2200) despite a mid-pack DG rank. Almost no PGA Tour course history, so course-fit penalty is real. Listed at his model number, but treat as a high-variance dart, not a survivor staple."
+        "rank": 12,
+        "name": "Robert MacIntyre",
+        "world_rank": 18,
+        "dg_rank": 17,
+        "odds_position": 16,
+        "odds": "+6000",
+        "value_score": 1.06,
+        "course_fit": 4,
+        "form": 3,
+        "injury_penalty": 0,
+        "composite": 9.19,
+        "notes": "Lefty with links-style instincts. Wind doesn't bother him. Sneaky Major dark horse."
       },
       {
-        "rank": 15,
-        "name": "Jacob Bridgeman",
-        "world_rank": 38,
-        "dg_rank": 38,
+        "rank": 13,
+        "name": "Maverick McNealy",
+        "world_rank": 20,
+        "dg_rank": 21,
         "odds_position": 22,
-        "odds": "+10000",
-        "value_score": 1.73,
+        "odds": "+8000",
+        "value_score": 0.95,
         "course_fit": 3,
         "form": 3,
         "injury_penalty": 0,
-        "composite": 11.2,
-        "notes": "Young player quietly piling up made cuts. Lower volatility than the other longshots \u2014 fine if you only need to clear the cut line and bank a small check."
-      }
-    ],
-    "save_for_later": [
-      {
-        "name": "Scottie Scheffler",
-        "reason": "World #1 \u2014 sit him this week (not in RBC field anyway). U.S. Open at Shinnecock Hills is 1 week away ($21.5M Major). He's the single best Shinnecock pick on the board."
+        "composite": 8.86,
+        "notes": "Steady, smart player. Major experience growing. Pure dart-throw with this composite."
       },
       {
-        "name": "Wyndham Clark",
-        "reason": "2023 U.S. Open champion \u2014 his single best week of the year is next week at Shinnecock ($21.5M Major). Pick him there unless you absolutely need him here."
+        "rank": 14,
+        "name": "Ludvig Aberg",
+        "world_rank": 7,
+        "dg_rank": 6,
+        "odds_position": 7,
+        "odds": "+2500",
+        "value_score": 0.86,
+        "course_fit": 3,
+        "form": 3,
+        "injury_penalty": 0,
+        "composite": 8.57,
+        "notes": "Elite talent but driving inaccuracy can hurt at Shinnecock. Major win coming; question is whether it's here."
       },
       {
-        "name": "Brooks Koepka",
-        "reason": "Two-time U.S. Open winner (incl. Shinnecock 2018). Saves better for next week's Major than this Tier 3 event."
+        "rank": 15,
+        "name": "Sahith Theegala",
+        "world_rank": 21,
+        "dg_rank": 23,
+        "odds_position": 20,
+        "odds": "+6500",
+        "value_score": 1.15,
+        "course_fit": 3,
+        "form": 2,
+        "injury_penalty": 0,
+        "composite": 8.45,
+        "notes": "Talent is Major-grade but form is cold. Speculative \u2014 only worth it if elite options exhausted."
       }
     ],
+    "save_for_later": [],
     "injury_watch": [
       {
-        "name": "JT Poston (not used)",
-        "concern": "Memorial winner withdrew from RBC Canadian Open \u2014 not in field. No action needed since he wasn't a candidate."
+        "name": "Brooks Koepka",
+        "concern": "Hand injury \u2014 withdrew from RBC Canadian Open before final round. Said his ring/pinky fingers were going numb. He confirmed he'll still play Shinnecock, but grip issues at a U.S. Open are a major red flag. Strong AVOID for survivor purposes."
       }
     ],
     "upcoming_tier1": [
-      {
-        "name": "U.S. Open",
-        "month": "Jun 2026",
-        "purse": 21500000,
-        "type": "Major",
-        "weeks_away": 1
-      },
       {
         "name": "The Open Championship",
         "month": "Jul 2026",
         "purse": 17000000,
         "type": "Major",
-        "weeks_away": 5
+        "weeks_away": 4
       },
       {
         "name": "FedEx St. Jude Championship",
         "month": "Aug 2026",
         "purse": 20000000,
         "type": "FedEx",
-        "weeks_away": 9
+        "weeks_away": 7
       },
       {
         "name": "BMW Championship",
@@ -755,9 +735,19 @@
         "purse": 20000000,
         "type": "FedEx",
         "weeks_away": 10
+      },
+      {
+        "name": "Tour Championship",
+        "month": "Sep 2026",
+        "purse": 100000000,
+        "type": "FedEx",
+        "weeks_away": 12
       }
     ],
-    "strategic_summary": "Tier 3 week sandwiched right before the U.S. Open ($21.5M Major) \u2014 preserve Scheffler, Wyndham Clark, and Brooks Koepka for Shinnecock. Two course-fit + hot-form picks dominate the board this week: Tommy Fleetwood (favorite, T4 at Memorial) and Sam Burns (playoff runner-up here in 2025, T5 at Memorial). Aaron Rai is the value play if you'd rather not burn premium ammo at a $9.8M purse."
+    "login_required": {
+      "flagged_at": "2026-06-17 22:12",
+      "message": "Splash Sports session expired. Last week's RBC Canadian Open pick + result could not be auto-recorded. Log back in at https://app.splashsports.com/ before next Wednesday \u2014 or tell Claude your pick + position in chat and I'll record it manually."
+    }
   },
   "season_pick_plan": {
     "generated_at": "2026-06-02 02:01",
