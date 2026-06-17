@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-17 22:29",
+  "last_updated": "2026-06-17 22:31",
   "season": {
     "pool_name": "CRUS11TOUR",
     "total_events": 30,
@@ -484,7 +484,7 @@
     }
   ],
   "this_week": {
-    "generated_at": "2026-06-17 22:29",
+    "generated_at": "2026-06-17 22:31",
     "methodology_version": "v3",
     "tournament": {
       "name": "U.S. Open",
@@ -504,6 +504,22 @@
     "recommendations": [
       {
         "rank": 1,
+        "name": "Bryson DeChambeau",
+        "world_rank": 8,
+        "dg_rank": 8,
+        "odds_position": 9,
+        "odds": "+3000",
+        "value_score": 0.889,
+        "course_fit": 4,
+        "form": 3,
+        "injury_penalty": 0,
+        "contrarian": 4,
+        "composite": 17.67,
+        "notes": "Two-time U.S. Open champion (2020, 2024). Course history strong, market fading. PROMOTED to #1 because LIV calendar leaves only this Major and the Open as usable events \u2014 Shinnecock fits him far better than a links course.",
+        "strategic_override": "USE-OR-LOSE: LIV player \u2014 only the U.S. Open and Open Championship remain as pickable events. Shinnecock fits his bombing-and-scrambling game; the Open at links does not. Deploy him here."
+      },
+      {
+        "rank": 2,
         "name": "Ludvig Aberg",
         "world_rank": 6,
         "dg_rank": 6,
@@ -515,10 +531,11 @@
         "injury_penalty": 0,
         "contrarian": 5,
         "composite": 18.57,
-        "notes": "Top-tier talent at the edge of the contrarian sweet spot. Driving inaccuracy is the wart at Shinnecock, but the upside is a Major win."
+        "notes": "Top-tier talent, sweet-spot odds (+2200). Choking concern at Majors knocks him below DeChambeau this week given DeChambeau's deployment constraint \u2014 but Aberg remains a strong play at Travelers or any Signature event with wider deployment flexibility.",
+        "strategic_override": "Hold for any of ~12 remaining usable events. Major-final-round inexperience (T2 Masters '24 close but no close) is a real flag at Shinnecock's punishing setup."
       },
       {
-        "rank": 2,
+        "rank": 3,
         "name": "Sam Burns",
         "world_rank": 14,
         "dg_rank": 14,
@@ -531,21 +548,6 @@
         "contrarian": 4,
         "composite": 17.82,
         "notes": "Multiple PGA wins, big game. Value vs. DG rank is strong (1.27). Contrarian leverage solid."
-      },
-      {
-        "rank": 3,
-        "name": "Bryson DeChambeau",
-        "world_rank": 8,
-        "dg_rank": 8,
-        "odds_position": 9,
-        "odds": "+3000",
-        "value_score": 0.889,
-        "course_fit": 4,
-        "form": 3,
-        "injury_penalty": 0,
-        "contrarian": 4,
-        "composite": 17.67,
-        "notes": "Two-time U.S. Open champion (2020, 2024). Market fading recent form gives contrarian edge. Course history is a real plus."
       },
       {
         "rank": 4,
@@ -744,7 +746,7 @@
         "weeks_away": 12
       }
     ],
-    "methodology_note": "v3 adds Contrarian (\u00d72). Formula: (Value \u00d7 3) + Course Fit + Form + Injury + (Contrarian \u00d7 2). Note: usually you'd play a stud at a Major, but Christopher's strategy this season is to hold Scheffler and Fleetwood for FedEx Cup playoffs ($20M-$100M purses, shrunken fields)."
+    "methodology_note": "v3 adds Contrarian (\u00d72). Formula: (Value \u00d7 3) + Course Fit + Form + Injury + (Contrarian \u00d7 2). MANUAL OVERRIDE this week: DeChambeau promoted to #1 over Aberg despite a slightly lower composite \u2014 DeChambeau is a LIV player with only the U.S. Open and Open Championship remaining as pickable events ('use-or-lose'), and Shinnecock fits him better than the Open's links setup."
   },
   "season_pick_plan": {
     "generated_at": "2026-06-02 02:01",
