@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-17 22:26",
+  "last_updated": "2026-06-17 22:29",
   "season": {
     "pool_name": "CRUS11TOUR",
     "total_events": 30,
@@ -484,7 +484,7 @@
     }
   ],
   "this_week": {
-    "generated_at": "2026-06-17 22:26",
+    "generated_at": "2026-06-17 22:29",
     "methodology_version": "v3",
     "tournament": {
       "name": "U.S. Open",
@@ -504,21 +504,6 @@
     "recommendations": [
       {
         "rank": 1,
-        "name": "Tommy Fleetwood",
-        "world_rank": 5,
-        "dg_rank": 5,
-        "odds_position": 4,
-        "odds": "+1800",
-        "value_score": 1.25,
-        "course_fit": 4,
-        "form": 4,
-        "injury_penalty": 0,
-        "contrarian": 5,
-        "composite": 21.75,
-        "notes": "Elite ball-striker; T4 at Memorial confirms form. Sweet spot of odds \u2014 4th favorite with major contrarian leverage vs. the Scheffler chalk crowd. Highest composite in v3 methodology."
-      },
-      {
-        "rank": 2,
         "name": "Ludvig Aberg",
         "world_rank": 6,
         "dg_rank": 6,
@@ -533,7 +518,7 @@
         "notes": "Top-tier talent at the edge of the contrarian sweet spot. Driving inaccuracy is the wart at Shinnecock, but the upside is a Major win."
       },
       {
-        "rank": 3,
+        "rank": 2,
         "name": "Sam Burns",
         "world_rank": 14,
         "dg_rank": 14,
@@ -548,7 +533,7 @@
         "notes": "Multiple PGA wins, big game. Value vs. DG rank is strong (1.27). Contrarian leverage solid."
       },
       {
-        "rank": 4,
+        "rank": 3,
         "name": "Bryson DeChambeau",
         "world_rank": 8,
         "dg_rank": 8,
@@ -563,7 +548,7 @@
         "notes": "Two-time U.S. Open champion (2020, 2024). Market fading recent form gives contrarian edge. Course history is a real plus."
       },
       {
-        "rank": 5,
+        "rank": 4,
         "name": "J.J. Spaun",
         "world_rank": 18,
         "dg_rank": 18,
@@ -578,7 +563,7 @@
         "notes": "Defending U.S. Open champion. Course knowledge maxed. Differentiation play at 20th odds."
       },
       {
-        "rank": 6,
+        "rank": 5,
         "name": "Justin Rose",
         "world_rank": 13,
         "dg_rank": 13,
@@ -593,7 +578,7 @@
         "notes": "2013 U.S. Open winner. Iron play and patience fit Shinnecock; form has been steady."
       },
       {
-        "rank": 7,
+        "rank": 6,
         "name": "Tyrrell Hatton",
         "world_rank": 12,
         "dg_rank": 12,
@@ -608,7 +593,7 @@
         "notes": "Consistent Major performer; comfortable in wind. Solid contrarian leverage and form."
       },
       {
-        "rank": 8,
+        "rank": 7,
         "name": "Wyndham Clark",
         "world_rank": 19,
         "dg_rank": 19,
@@ -623,22 +608,7 @@
         "notes": "2023 U.S. Open champion at LACC \u2014 proven Major closer. Big game fits Shinnecock's wide corridors."
       },
       {
-        "rank": 9,
-        "name": "Scottie Scheffler",
-        "world_rank": 1,
-        "dg_rank": 1,
-        "odds_position": 1,
-        "odds": "+550",
-        "value_score": 1.0,
-        "course_fit": 5,
-        "form": 5,
-        "injury_penalty": 0,
-        "contrarian": 1,
-        "composite": 15.0,
-        "notes": "World #1 chasing the career Grand Slam. Leads field in true SG tee-to-green and bogey avoidance \u2014 perfect Shinnecock skill set. Penalty: heaviest chalk in the field, so pool leverage is zero."
-      },
-      {
-        "rank": 10,
+        "rank": 8,
         "name": "Min Woo Lee",
         "world_rank": 16,
         "dg_rank": 16,
@@ -653,7 +623,7 @@
         "notes": "Big game and rising star; first-time U.S. Open contender potential."
       },
       {
-        "rank": 11,
+        "rank": 9,
         "name": "Keegan Bradley",
         "world_rank": 26,
         "dg_rank": 26,
@@ -668,7 +638,7 @@
         "notes": "Ryder Cup captain. NY native \u2014 knows Shinnecock. Punchy iron game fits the venue."
       },
       {
-        "rank": 12,
+        "rank": 10,
         "name": "Robert MacIntyre",
         "world_rank": 17,
         "dg_rank": 17,
@@ -683,7 +653,7 @@
         "notes": "Lefty with links-style instincts. Wind doesn't bother him."
       },
       {
-        "rank": 13,
+        "rank": 11,
         "name": "Corey Conners",
         "world_rank": 24,
         "dg_rank": 24,
@@ -698,7 +668,7 @@
         "notes": "Elite ball-striker / accuracy off the tee \u2014 exactly the Shinnecock profile. Putting limits the upside."
       },
       {
-        "rank": 14,
+        "rank": 12,
         "name": "Maverick McNealy",
         "world_rank": 21,
         "dg_rank": 21,
@@ -713,7 +683,7 @@
         "notes": "Steady, smart player. Dart-throw level value."
       },
       {
-        "rank": 15,
+        "rank": 13,
         "name": "Sahith Theegala",
         "world_rank": 23,
         "dg_rank": 23,
@@ -728,7 +698,16 @@
         "notes": "Talent is Major-grade but form is cold. Speculative only."
       }
     ],
-    "save_for_later": [],
+    "save_for_later": [
+      {
+        "name": "Scottie Scheffler",
+        "reason": "Hold for FedEx Cup playoffs. Tour Championship ($100M purse, top-30 field, Aug 27) is the highest single-event payout left \u2014 Scheffler is the lock favorite in a shrunken field. BMW ($20M) and FedEx St. Jude ($20M) are also live options if you want to deploy earlier."
+      },
+      {
+        "name": "Tommy Fleetwood",
+        "reason": "Hold for FedEx Cup playoffs. Top-tier ball-striker who plays well in the playoff format and would have strong leverage at FedEx St. Jude ($20M) or BMW ($20M) \u2014 both deeper Tier 1 events where chalk concentrates on Scheffler, leaving Fleetwood as the contrarian counter."
+      }
+    ],
     "injury_watch": [
       {
         "name": "Brooks Koepka",
@@ -765,7 +744,7 @@
         "weeks_away": 12
       }
     ],
-    "methodology_note": "v3 adds Contrarian (\u00d72): rewards picks the pool/market is fading. Heavy chalk (top-3 odds) = 1; sweet spot (4-7) = 5; solid contrarian (8-12) = 4; deeper diff (13-20) = 3; dart (>20) = 2. Formula: (Value \u00d7 3) + Course Fit + Form + Injury + (Contrarian \u00d7 2)."
+    "methodology_note": "v3 adds Contrarian (\u00d72). Formula: (Value \u00d7 3) + Course Fit + Form + Injury + (Contrarian \u00d7 2). Note: usually you'd play a stud at a Major, but Christopher's strategy this season is to hold Scheffler and Fleetwood for FedEx Cup playoffs ($20M-$100M purses, shrunken fields)."
   },
   "season_pick_plan": {
     "generated_at": "2026-06-02 02:01",
