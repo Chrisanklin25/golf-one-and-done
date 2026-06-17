@@ -503,9 +503,10 @@
           <p>We use Data Golf rankings instead of the Official World Golf Rankings (OWGR). Why? OWGR penalizes LIV Golf players who play fewer sanctioned events, making them look artificially weak. At Majors, where LIV players compete, OWGR rankings would underestimate players like Rahm, Koepka, or DeChambeau. Data Golf's model is based on actual scoring ability, making it fairer across tours.</p>
         </div>
         <div class="method-section">
-          <h3>The composite score</h3>
-          <p>Each available player gets scored on five factors that combine into a single number:</p>
-          <div class="formula-box">Score = (Value x 3) + Course Fit + Form + Injury</div>
+          <h3>The composite score <span style="font-size:12px; background:var(--navy); color:white; padding:2px 8px; border-radius:10px; vertical-align:middle;">v3</span></h3>
+          <p>Each available player gets scored on six factors that combine into a single number:</p>
+          <div class="formula-box">Score = (Value x 3) + Course Fit + Form + Injury + (Contrarian x 2)</div>
+          <p style="font-size:13px; color:#666; margin-top:8px;"><em>v3 (Jun 2026) added the Contrarian factor. In an earnings-format survivor pool, every dollar your pick earns is also earned by every other entrant who picked the same player. Picking the chalk = zero leverage on the field. Picking a differentiated player with similar EV = pure upside.</em></p>
         </div>
         <div class="method-section">
           <h3>Value score</h3>
@@ -535,6 +536,15 @@
           <div class="scale-row"><div class="scale-num" style="background:var(--green);">0</div> Healthy — no concerns</div>
           <div class="scale-row"><div class="scale-num" style="background:#D4A843;">-2</div> Minor concern — monitoring</div>
           <div class="scale-row"><div class="scale-num" style="background:var(--red);">-10</div> Significant withdrawal risk — avoid</div>
+        </div>
+        <div class="method-section">
+          <h3>Contrarian factor (1-5) <span style="font-size:11px; background:var(--navy); color:white; padding:2px 6px; border-radius:8px;">new in v3</span></h3>
+          <p>How differentiated is this pick relative to the betting market (a proxy for pool ownership)? Earnings-format survivor pools reward leverage — picking a player nobody else is on means their earnings build your lead instead of the field's. Weighted ×2.</p>
+          <div class="scale-row"><div class="scale-num">5</div> Sweet spot — 4th-7th betting favorite (strong skill + low ownership)</div>
+          <div class="scale-row"><div class="scale-num">4</div> Solid contrarian — 8th-12th favorite</div>
+          <div class="scale-row"><div class="scale-num">3</div> Deeper differentiation — 13th-20th favorite</div>
+          <div class="scale-row"><div class="scale-num">2</div> Dart throw — beyond 20th favorite</div>
+          <div class="scale-row"><div class="scale-num">1</div> Heavy chalk — top 3 favorites (zero pool leverage)</div>
         </div>
       </div>
     </div>
@@ -702,50 +712,4 @@ function render() {
         <div class="event-pick-result ${resultClass}">${ev.result || ''} · ${formatMoney(earnings)}</div>
       </div>`;
     } else if (isCurrent) {
-      pickHtml = '<div class="event-pick"><div class="event-pick-name" style="color:var(--gold)">This Week</div></div>';
-    }
-    return `<div class="event-row">
-      <div class="event-status ${statusClass}"></div>
-      <div class="event-info">
-        <div class="event-name">${ev.name} ${tierTag}</div>
-        <div class="event-meta-line">${ev.month} · ${formatMoney(ev.purse)} · ${ev.type}</div>
-      </div>
-      ${pickHtml}
-    </div>`;
-  }).join('');
-
-  // Used players
-  const usedGrid = document.getElementById('usedGrid');
-  document.getElementById('usedCount').textContent = used.length;
-  usedGrid.innerHTML = used.map(p => {
-    const earningsClass = (p.earnings || 0) > 0 ? 'positive' : 'zero';
-    return `<div class="used-chip">
-      <div class="chip-name">${p.name}</div>
-      <div class="chip-event">${p.tournament}</div>
-      <div class="chip-earnings ${earningsClass}">${p.result} · ${formatMoney(p.earnings || 0)}</div>
-    </div>`;
-  }).join('');
-
-  // Footer
-  document.getElementById('footer').textContent =
-    'Data: Data Golf Rankings · Odds: DraftKings · Updated ' + (tw.generated_at || 'N/A');
-}
-
-function toggleExpand(i) {
-  document.getElementById('expand-' + i).classList.toggle('open');
-}
-
-// Tab switching
-document.querySelectorAll('.tab').forEach(tab => {
-  tab.addEventListener('click', () => {
-    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-    tab.classList.add('active');
-    document.getElementById(tab.dataset.tab).classList.add('active');
-  });
-});
-
-loadData();
-</script>
-</body>
-</html>
+      pickHtml = '<div class="event-pick"><div class="event-pic
